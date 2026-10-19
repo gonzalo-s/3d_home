@@ -1,18 +1,25 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { ControlPanel } from '../controls/ControlPanel';
 import { ReferenceDialog } from './ReferenceDialog';
 import { ViewerToolbar } from './ViewerToolbar';
+import { HandControls } from '../controls/HandControls';
+import type { HouseViewer as ViewerEngine } from '../../engine/core/createHouseViewer';
 
 export function HouseViewer() {
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
-  useEffect(() => {
+  const [engine, setEngine] = useState<ViewerEngine | null>(null);
+  const [viewport, setViewport] = useState<HTMLDivElement | null>(null);
+  // OrbitControls removes a listener from canvas.getRootNode() on disposal.
+  // Release it before React detaches the canvas from the document.
+  useLayoutEffect(() => {
     let cancelled = false;
-    let viewer: { dispose(): void } | undefined;
+    let viewer: ViewerEngine | undefined;
     import('../../engine/core/createHouseViewer.js').then(({ createHouseViewer }) => {
       if (!cancelled) {
         viewer = createHouseViewer();
+        setEngine(viewer);
         setStatus('ready');
       }
     }).catch(() => { if (!cancelled) setStatus('error'); });
@@ -35,8 +42,8 @@ export function HouseViewer() {
         </div>
       </header>
       <main>
-        <ControlPanel />
-        <div id="view" role="region" aria-label="Visor 3D de Casa Valle">
+        <ControlPanel handControls={<HandControls viewer={engine} viewport={viewport} />} />
+        <div ref={setViewport} id="view" role="region" aria-label="Visor 3D de Casa Valle">
           <ViewerToolbar />
           {status !== 'ready' && <div className="viewer-loading" role={status === 'error' ? 'alert' : 'status'}>
             {status === 'loading' ? 'Cargando modelo 3D…' : <><p>No se pudo iniciar el visor 3D.</p><button type="button" onClick={() => window.location.reload()}>Volver a intentar</button></>}
