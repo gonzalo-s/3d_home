@@ -16,7 +16,7 @@ const tabs = [
 ] as const;
 type Tab = typeof tabs[number]['id'];
 
-export function ControlPanel() {
+export function ControlPanel({ handControls }: { handControls?: React.ReactNode }) {
   const [active, setActive] = useState<Tab | null>(null);
   const [mobile, setMobile] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
@@ -66,7 +66,7 @@ export function ControlPanel() {
             <button type="button" aria-label="Cerrar controles" onClick={close}><Icon name="close" /></button>
           </div>
           <div className="controls-scroll">
-            <div className="control-group" data-panel="explore"><ViewSection /><ModelInfoSection /></div>
+            <div className="control-group" data-panel="explore"><ViewSection />{handControls}<ModelInfoSection /></div>
             <div className="control-group" data-panel="layers"><div className="layers-intro"><h2>Capas del modelo</h2><p>Abrí un grupo y elegí qué mostrar.</p></div><ElectricalSection /><InstallationsSection /><IotSection /></div>
             <div className="control-group" data-panel="sun"><SunSection /></div>
           </div>

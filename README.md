@@ -13,6 +13,7 @@ El modelo parte de Casa Valle v39 y de sus datos CAD, con ajustes documentados a
 - Cambiar fecha, hora y ubicación solar para revisar luz diurna, sombras y transición día/noche.
 - Consultar puntos, tableros y recorridos eléctricos, y visualizar las luminarias instaladas.
 - Guardar una imagen de la vista actual.
+- Activar controles opcionales con las manos mediante cámara: una pinza para girar, dos para acercar y desplazar, y pulgar abajo/arriba sostenido con anillo de confirmación para ocultar/restaurar techo y planta alta. Video procesado localmente; instrucciones y límites en [docs/GESTURES.md](docs/GESTURES.md).
 - Usar herramientas agrupadas para móvil, controles táctiles y referencias ampliables que se cierran tocando fuera del popup. Detalles en [docs/UI_MOBILE.md](docs/UI_MOBILE.md).
 
 ## Tecnologías y librerías
@@ -87,6 +88,7 @@ Abrir [localhost:3000](http://localhost:3000). Google debe devolver un correo ve
 | `npm run typecheck` | Comprobar los tipos de TypeScript. |
 | `npm run check:data` | Validar referencias de imágenes, mapeos, luminarias e identificadores eléctricos. |
 | `npm run test:auth` | Pruebas de las reglas de acceso. |
+| `npm run test:gestures` | Pruebas de gestos y ciclo de vida de la cámara. |
 | `npm run test:auth:integration` | Verificar rutas, sesiones y assets protegidos sobre un build de producción. Ejecutar después de `npm run build`. |
 
 El test de integración usa sesiones sintéticas; el inicio de sesión real con Google se comprueba manualmente. Las comprobaciones visuales deben usar la misma cámara, viewport, fecha y hora, e incluir plantas, iluminación, muros y selección eléctrica.
