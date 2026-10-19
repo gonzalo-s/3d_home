@@ -1,5 +1,6 @@
 import { FilesetResolver, GestureRecognizer } from '@mediapipe/tasks-vision';
 import type { TrackedHand } from './gestureLogic';
+import { confirmThumb, recognizedThumb } from './handPose';
 
 export type TrackingRequest = { type: 'init' } | { type: 'frame'; bitmap: ImageBitmap; timestamp: number };
 export type TrackingResponse = { type: 'ready' } | { type: 'error' } |
@@ -22,7 +23,7 @@ scope.onmessage = async ({ data }) => {
         },
         runningMode: 'VIDEO', numHands: 2,
         minHandDetectionConfidence: 0.65, minHandPresenceConfidence: 0.5, minTrackingConfidence: 0.5,
-        cannedGesturesClassifierOptions: { categoryAllowlist: ['Thumb_Up', 'Thumb_Down'], scoreThreshold: 0.65 },
+        cannedGesturesClassifierOptions: { maxResults: 1 },
       });
       scope.postMessage({ type: 'ready' });
     } else {
@@ -30,12 +31,14 @@ scope.onmessage = async ({ data }) => {
         if (!tracker) throw new Error('Tracker not ready');
         const result = tracker.recognizeForVideo(data.bitmap, data.timestamp);
         const aspect = data.bitmap.width / data.bitmap.height;
-        scope.postMessage({ type: 'result', timestamp: data.timestamp, hands: result.landmarks.map((landmarks, i) => ({
-          id: result.handedness[i]?.[0]?.categoryName ?? String(i),
-          thumb: result.gestures[i]?.[0]?.categoryName === 'Thumb_Up' ? 'up' :
-            result.gestures[i]?.[0]?.categoryName === 'Thumb_Down' ? 'down' : undefined,
-          landmarks: landmarks.map(p => ({ x: (1 - p.x) * aspect, y: p.y })),
-        })) });
+        scope.postMessage({ type: 'result', timestamp: data.timestamp, hands: result.landmarks.map((raw, i) => {
+          const landmarks = raw.map(p => ({ x: (1 - p.x) * aspect, y: p.y }));
+          return {
+            id: result.handedness[i]?.[0]?.categoryName ?? String(i),
+            thumb: confirmThumb(recognizedThumb(result.gestures[i] ?? []), landmarks),
+            landmarks,
+          };
+        }) });
       } finally { data.bitmap.close(); }
     }
   } catch {

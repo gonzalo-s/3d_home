@@ -1,7 +1,6 @@
 import type { TrackedHand } from './gestureLogic';
 import type { VisibilityDirection, VisibilityPreview } from './visibilityGestures';
 import { MAX_SAMPLE_GAP_MS } from './handTrackingTiming';
-import { openPalm } from './handPose';
 
 export type ThumbFeedback = {
   phase: 'idle' | 'holding' | 'complete' | 'release' | 'blocked';
@@ -27,11 +26,19 @@ export function createThumbHoldLogic() {
     if (now - lastTime > MAX_SAMPLE_GAP_MS || now <= lastTime) cancel();
     lastTime = now;
     if (latched) {
-      if (hands.length > 0 && hands.every(hand => !hand.thumb && openPalm(hand))) {
+      // A visible relaxed hand or pinch also releases the thumb. Requiring
+      // extended fingers trapped tilted/partly closed hands in the old latch.
+      const neutral = hands.length > 0 && hands.every(hand => !hand.thumb &&
+        hand.landmarks.length >= 21 && hand.landmarks.every(p => Number.isFinite(p.x) && Number.isFinite(p.y)) &&
+        Math.hypot(hand.landmarks[0].x - hand.landmarks[9].x, hand.landmarks[0].y - hand.landmarks[9].y) >= 0.025);
+      if (neutral) {
         neutralSince ??= now;
         if (now - neutralSince >= NEUTRAL_HOLD_MS) { latched = undefined; candidate = ''; }
       } else neutralSince = undefined;
-      if (latched) return { phase: 'release', progress: 1, thumb: latched, label: 'Abrí la mano para continuar' };
+      // The latch prevents repeated actions, not camera controls or their hints.
+      if (latched) return hands.some(hand => hand.thumb)
+        ? { phase: 'release', progress: 1, thumb: latched, label: 'Soltá el pulgar para continuar' }
+        : { phase: 'idle', progress: 0, label: '' };
     }
     const hand = hands.length === 1 ? hands[0] : undefined;
     if (!hand?.thumb || !preview) { candidate = ''; samples = 0; return { phase: 'idle', progress: 0, label: '' }; }

@@ -30,7 +30,7 @@ test('only an open neutral hand rearms; occlusion, cancel and changing thumb dir
   const logic = createThumbHoldLogic();
   for (const t of [0, 250, 500]) logic.update([hand('down')], t, preview);
   logic.cancel();
-  assert.equal(logic.update([], 1000).phase, 'release');
+  assert.equal(logic.update([], 1000).phase, 'idle');
   assert.equal(logic.update([hand('up')], 1300, preview).fire, undefined);
   assert.equal(logic.update([hand('up')], 1600, preview).fire, undefined);
   logic.update([hand()], 1800);
@@ -61,4 +61,14 @@ test('ambiguous hands, unavailable actions, stale samples and single detections 
   logic.update([hand('down')], 800, preview);
   assert.equal(logic.update([hand('down')], 1500, preview).progress, 0);
   assert.equal(logic.update([hand('down')], 2000, preview).fire, undefined, 'at least three confirmations are required');
+});
+
+test('a classifier thumb only counts when folded fingers and thumb direction agree', async () => {
+  const { confirmThumb, recognizedThumb } = await import('../src/engine/interaction/handPose.ts');
+  const fist = (thumbY) => { const h = hand('up'); for (const tip of [8, 12, 16, 20]) { h.landmarks[tip] = { x: 0.5, y: 0.55 }; h.landmarks[tip - 2] = { x: 0.5, y: 0.4 }; } h.landmarks[4] = { x: 0.5, y: thumbY }; h.landmarks[9] = { x: 0.5, y: 0.5 }; return h.landmarks; };
+  assert.equal(confirmThumb('up', fist(0.3)), 'up');
+  assert.equal(confirmThumb('down', fist(1.1)), 'down');
+  assert.equal(confirmThumb('up', fist(1.1)), undefined);
+  assert.equal(confirmThumb('up', hand().landmarks), undefined, 'open hand is never a thumb');
+  assert.equal(recognizedThumb([{ categoryName: 'Open_Palm', score: 0.9 }, { categoryName: 'Thumb_Up', score: 0.3 }]), undefined);
 });

@@ -9,7 +9,7 @@ Función opcional, apagada al abrir la aplicación. El [plan original](gesture-c
 3. Una pinza de pulgar e índice permite girar. Dos manos en pinza permiten acercar/alejar al separarlas/juntarlas y desplazar al moverlas juntas. Soltar detiene el movimiento.
 4. Mostrar **una mano con pulgar abajo** para ocultar primero techo y cielorraso y después planta alta. **Pulgar arriba** restaura primero planta alta y luego techo/cielorraso.
 5. El anillo muestra el progreso de confirmación. La leyenda anuncia la acción concreta: **Ocultar techo y cielorraso**, **Ocultar planta alta**, **Mostrar planta alta** o **Mostrar techo y cielorraso**. Mantener el gesto aproximadamente medio segundo; requiere al menos tres muestras confirmadas y puede tardar más si la inferencia es lenta.
-6. El anillo completo confirma una sola acción. **Abrir la mano** unos 200 ms permite una nueva acción. Mantener el pulgar, cambiar directamente de arriba a abajo o perder la mano de vista no repite ni rearma el cambio. Cuando no hay otra capa disponible se indica **Todo ya está oculto/visible**.
+6. El anillo completo confirma una sola acción. **Soltar el pulgar** (mano visible sin pulgar reconocido) unos 200 ms permite una nueva acción. Mantener el pulgar, cambiar directamente de arriba a abajo o perder la mano de vista no repite ni rearma el cambio. Cuando no hay otra capa disponible se indica **Todo ya está oculto/visible**.
 7. Los iconos izquierda/derecha muestran la pose reconocida: pinza, abierta, en reposo o pulgar arriba/abajo. La identificación anatómica es una estimación del tracker. No es una reconstrucción exacta de los dedos.
 
 Los botones manuales y los gestos usan el mismo estado de visibilidad. Un cambio manual durante una confirmación cancela o reinicia su progreso para el nuevo objetivo. Planta baja conserva su estado. Los pulgares reconocidos no mueven la cámara.
@@ -18,9 +18,9 @@ El video se procesa localmente, sin audio, grabación ni envío de fotogramas. A
 
 ## Integración
 
-- `handTracking.worker.ts`: un único **GestureRecognizer**, que devuelve landmarks y clasificación Thumb_Up/Thumb_Down, con umbral 0,65. Reemplaza HandLandmarker; no ejecuta dos pipelines. Mantiene inferencia CPU fuera del render y cierra cada ImageBitmap.
+- `handTracking.worker.ts`: un único **GestureRecognizer**, que devuelve landmarks y clasificación de poses. Un pulgar sólo cuenta si la pose ganadora es Thumb_Up/Thumb_Down (≥0,65) y los landmarks lo confirman (dedos plegados, pulgar claramente arriba/abajo). Reemplaza HandLandmarker; no ejecuta dos pipelines. Mantiene inferencia CPU fuera del render y cierra cada ImageBitmap.
 - `gestureLogic.ts` y `handPose.ts`: pinzas con histéresis y observaciones visuales. Un pulgar reconocido queda excluido de la pinza. Los deslizamientos ya no ejecutan acciones.
-- `thumbHoldLogic.ts`: confirmación de 500 ms y tres muestras, cancelación ante pérdida/cambio de mano, dirección u objetivo. El resultado queda bloqueado hasta observar manos abiertas durante 200 ms; un dropout no rearma la acción.
+- `thumbHoldLogic.ts`: confirmación de 500 ms y tres muestras, cancelación ante pérdida/cambio de mano, dirección u objetivo. El resultado queda bloqueado hasta observar una mano visible sin pulgar durante 200 ms; un dropout no rearma la acción.
 - `visibilityGestures.ts`: previsualización y aplicación de acciones según el estado real de techo y PA. No duplica ese estado ni modifica geometría o iluminación.
 - `startHandControls.ts`: cámara, worker y publicación de feedback. Una imagen en vuelo, hasta 15 inferencias/s y ancho máximo de transferencia de 480 px. Se rechazan resultados de más de 800 ms; la continuidad admite intervalos de hasta 600 ms. Mouse, teclado, diálogos y paneles móviles interrumpen la confirmación.
 - `HandPoseHint.tsx` y `ThumbActionHint.tsx`: iconos, anillo SVG y leyenda accesible. El progreso actualiza directamente el arco y sus atributos ARIA con cada resultado; React sólo recibe cambios de pose, fase o leyenda. No se añade otro RAF.
