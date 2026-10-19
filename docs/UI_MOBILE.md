@@ -27,7 +27,7 @@ Verificar en producción local autenticada: 390×844, 320×568, 844×390, 820×1
 
 Las comprobaciones con Chromium y emulación táctil no sustituyen las pruebas en Safari/iOS y Android físicos. El rendimiento del modelo depende del dispositivo; estos cambios no implican haber optimizado todos los recursos WebGL.
 
-Comprobación realizada sobre un build Next.js de producción con sesiones sintéticas locales: los cinco tamaños anteriores pasaron navegación, cierre exterior con toque, cambio de referencia, ampliación, Escape y foco. También se comprobó rotación con el modal abierto, regreso a escritorio, referencias de oficina e instalaciones y un único canvas después de cambiar herramientas. Build, comprobación de tipos y pruebas de reglas de acceso correctos. La validación general de datos conserva el problema previo de tres JPG eliminados que todavía figuran en el manifiesto; esta tarea no recupera esas fotos.
+Comprobación realizada sobre un build Next.js de producción con sesiones sintéticas locales: los cinco tamaños anteriores pasaron navegación, cierre exterior con toque, cambio de referencia, ampliación, Escape y foco. También se comprobó rotación con el modal abierto, regreso a escritorio, referencias de oficina e instalaciones y un único canvas después de cambiar herramientas. Build, comprobación de tipos y pruebas de reglas de acceso correctos. La limpieza posterior retiró los tres JPG eliminados del manifiesto y registró los dibujos activos de oficina y placares; la validación general de datos vuelve a pasar.
 
 ## Ajustes de sol y jerarquía de capas
 

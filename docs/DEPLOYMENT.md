@@ -73,6 +73,7 @@ The integration check starts a production server on `127.0.0.1:3128` (override w
 - Google must report a verified email, and that exact address must match the server allowlist. Matching ignores letter case and surrounding spaces; it does not expand aliases, dots or wildcards.
 - Sessions are encrypted, HTTP-only cookies and expire after eight hours. On HTTPS, NextAuth uses secure cookies. Google tokens are not sent to the viewer.
 - `src/proxy.ts` checks every app request, including `public` photos, image optimization, RSC requests and `/_next/static` JS. House data is bundled into the viewer JS, so those bundles must stay protected. The login/error/signout pages are provided by NextAuth and do not need app JS. Do not add the usual static-file exemptions to this proxy.
+- Only the generic brand icons (`/favicon.ico`, `/icon.svg`, `/apple-icon.png`) are public so browsers can display the house favicon before login. These exact exceptions do not expose room references or viewer bundles.
 - `src/app/page.tsx` also checks the session before rendering the viewer. New server endpoints or actions handling house data must check authorization themselves.
 - Protected responses use `Cache-Control: private, no-store`. Do not add public CDN caching or service-worker caches around the app. Check this on Vercel as part of deployment validation.
 - Removing an address takes effect on subsequent requests after redeployment. Previously downloaded information or an already open viewer cannot be erased from a user's browser.

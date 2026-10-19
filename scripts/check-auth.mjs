@@ -65,6 +65,12 @@ const denied = [
 
 let server = await start();
 try {
+  for (const path of ['/favicon.ico', '/icon.svg', '/apple-icon.png']) {
+    const icon = await fetch(origin + path, { redirect: 'manual' });
+    assert.equal(icon.status, 200, path);
+    assert.match(icon.headers.get('content-type'), /^image\//, path);
+    assert((await icon.arrayBuffer()).byteLength > 0, path);
+  }
   const login = await fetch(`${origin}/api/auth/signin?callbackUrl=%2F`);
   assert.equal(login.status, 200);
   const loginHtml = await login.text();
@@ -88,7 +94,10 @@ try {
 
   const allowedPage = await fetch(origin, { headers: { Cookie: authorized } });
   assert.equal(allowedPage.status, 200);
-  assert.match(await allowedPage.text(), /Cerrar sesi/);
+  const allowedHtml = await allowedPage.text();
+  assert.match(allowedHtml, /Cerrar sesi/);
+  assert.match(allowedHtml, /rel="icon"[^>]*href="\/favicon\.ico/);
+  assert.match(allowedHtml, /rel="apple-touch-icon"/);
   const files = await readdir('.next/static', { recursive: true });
   const chunks = files.filter((file) => file.endsWith('.js')).map((file) => `/_next/static/${file.replaceAll('\\', '/')}`);
   assert(chunks.length > 0);
@@ -142,6 +151,7 @@ server = await start({ ALLOWED_GOOGLE_EMAILS: '' });
 try {
   assert.equal((await fetch(origin, { redirect: 'manual' })).status, 503);
   assert.equal((await fetch(origin + firstImage, { headers: { Cookie: authorized } })).status, 503);
+  assert.equal((await fetch(origin + '/favicon.ico')).status, 200);
   console.log('PASS: missing configuration fails closed.');
 } finally {
   await stop(server);

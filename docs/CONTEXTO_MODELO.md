@@ -21,6 +21,8 @@
 
 ## Interfaz y comportamiento
 
+- `house.photos` conserva sus 24 índices históricos: las posiciones retiradas 4, 8 y 9 son `null`, para no desplazar las referencias de ambientes. El manifiesto de assets registra solo imágenes activas, incluidos los dibujos de oficina y placares suministrados mediante referencias directas. Los índices no deben compactarse.
+- `cameras.json` describe las cuatro cámaras físicas y alimenta su geometría y los recorridos de red. Sus nombres, zonas y fotos fuente documentan la ubicación; no es una configuración de video en vivo y la aplicación no implementa feeds de cámaras.
 - Las capas de electricidad, instalaciones y datos empiezan apagadas, incluidas sus opciones individuales. Los interruptores de grupo abren las opciones sin activarlas todas; al apagar un grupo se ocultan sus overlays y se conserva la selección. En móvil, Luz y sol comienza con el deslizador horario y una flecha para abrir toda la configuración, manteniendo el modelo sin oscurecer.
 - El comedor tiene referencias propias de perspectiva y planta 2D centradas en su mesa, cuatro sillas, aparador y puerta balcón, basadas en el modelo actual. El icono de cámara abre esas vistas; la cocina conserva sus imágenes anteriores. Capturas, prompts y límites en `docs/DINING_REFERENCE_PROMPTS.json`.
 - En móvil se prioriza el canvas, con barra de plantas/vistas y tres herramientas inferiores: Explorar, Luz y sol y Capas. Los paneles mantienen los controles montados y el motor conserva una sola instancia. Las referencias usan un diálogo modal con cierre exterior, Escape y ampliación; ver `docs/UI_MOBILE.md`.

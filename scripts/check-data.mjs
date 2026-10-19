@@ -6,9 +6,20 @@ import assert from 'node:assert/strict';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const readJSON=async name=>JSON.parse(await readFile(path.join(root,'src/data',name),'utf8'));
 const assets=await readJSON('asset-map.json');
-assert.equal(assets.length,24,'La referencia v39 contiene 24 imágenes');
-for(const asset of assets)await access(path.join(root,'public',asset.path));
 const house=await readJSON('house.json');
+assert.equal(house.photos.length,24,'Conservar los índices históricos de fotos del modelo');
+const registeredPaths=new Set(assets.map(asset=>asset.path));
+assert.equal(registeredPaths.size,assets.length,'Referencias activas duplicadas');
+for(const asset of assets){
+  await access(path.join(root,'public',asset.path));
+  if(asset.sourcePath.startsWith('photos.'))assert.equal(asset.path,house.photos[Number(asset.sourcePath.slice(7))]);
+}
+// Retired slots stay null so remaining photo IDs and camera anchors do not shift.
+for(const photo of house.photos){
+  if(photo===null)continue;
+  assert.equal(typeof photo,'string');
+  assert(registeredPaths.has(photo),`Referencia ausente del manifiesto: ${photo}`);
+}
 const roomReferences=await readJSON('room-reference-views.json');
 assert.equal(roomReferences.length,10,'Diez ambientes con perspectiva y planta');
 assert.equal(new Set(roomReferences.map(room=>room.photoIndex)).size,roomReferences.length);
@@ -25,4 +36,4 @@ assert.equal(snapshot.installedLights.length,40,'La referencia v39 contiene 40 l
 assert.equal(new Set(snapshot.installedLights.map(p=>p.id)).size,40,'IDs duplicados en luminarias');
 assert(snapshot.electrical.floors.pb.points.some(p=>p.id==='PB-L01'&&p.kind==='light'));
 assert(snapshot.electrical.floors.pb.points.some(p=>p.id==='PB-76'&&p.kind==='middle'));
-console.log(`Datos v39: 24 referencias, ${roomReferences.length} plantas CAD, 40 luminarias y nodos eléctricos sin IDs duplicados.`);
+console.log(`Datos v39: ${assets.length} referencias activas, ${roomReferences.length} plantas CAD, 40 luminarias y nodos eléctricos sin IDs duplicados.`);

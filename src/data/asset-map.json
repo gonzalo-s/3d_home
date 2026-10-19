@@ -1,121 +1,97 @@
 [
   {
-    "index": 1,
     "path": "/assets/references/cad/cad-rear-bedroom.png",
     "sourcePath": "photos.0"
   },
   {
-    "index": 2,
     "path": "/assets/references/cad/cad-small-bathroom.png",
     "sourcePath": "photos.1"
   },
   {
-    "index": 3,
     "path": "/assets/references/cad/cad-hallway.png",
     "sourcePath": "photos.2"
   },
   {
-    "index": 4,
     "path": "/assets/references/cad/cad-middle-bedroom.png",
     "sourcePath": "photos.3"
   },
   {
-    "index": 5,
-    "path": "/assets/references/reference-05.jpg",
-    "sourcePath": "photos.4"
+    "path": "/assets/references/Clean office layout_ perspective and floor plan.png",
+    "sourcePath": "OFFICE_REFERENCE.image"
   },
   {
-    "index": 6,
     "path": "/assets/references/cad/cad-dressing-room.png",
     "sourcePath": "photos.5"
   },
   {
-    "index": 7,
     "path": "/assets/references/cad/cad-master-bedroom.png",
     "sourcePath": "photos.6"
   },
   {
-    "index": 8,
     "path": "/assets/references/cad/cad-master-bathroom.png",
     "sourcePath": "photos.7"
   },
   {
-    "index": 9,
-    "path": "/assets/references/reference-09.jpg",
-    "sourcePath": "photos.8"
+    "path": "/assets/references/White oak wardrobe with long-garment bay-1.png",
+    "sourcePath": "PLACARD_REFERENCES.large.image"
   },
   {
-    "index": 10,
-    "path": "/assets/references/reference-10.jpg",
-    "sourcePath": "photos.9"
+    "path": "/assets/references/Streamlined wardrobe with full-height hanging bay-2.png",
+    "sourcePath": "PLACARD_REFERENCES.small.image"
   },
   {
-    "index": 11,
     "path": "/assets/references/cad/cad-dining-room.png",
     "sourcePath": "photos.10"
   },
   {
-    "index": 12,
     "path": "/assets/references/cad/cad-living-room.png",
     "sourcePath": "photos.11"
   },
   {
-    "index": 13,
     "path": "/assets/references/cad/cad-garden.png",
     "sourcePath": "photos.12"
   },
   {
-    "index": 14,
     "path": "/assets/references/reference-14.jpg",
     "sourcePath": "photos.13"
   },
   {
-    "index": 15,
     "path": "/assets/references/reference-15.jpg",
     "sourcePath": "photos.14"
   },
   {
-    "index": 16,
     "path": "/assets/references/reference-16.jpg",
     "sourcePath": "photos.15"
   },
   {
-    "index": 17,
     "path": "/assets/references/reference-17.jpg",
     "sourcePath": "photos.16"
   },
   {
-    "index": 18,
     "path": "/assets/references/reference-18.jpg",
     "sourcePath": "photos.17"
   },
   {
-    "index": 19,
     "path": "/assets/references/reference-19.jpg",
     "sourcePath": "photos.18"
   },
   {
-    "index": 20,
     "path": "/assets/references/reference-20.jpg",
     "sourcePath": "photos.19"
   },
   {
-    "index": 21,
     "path": "/assets/references/reference-21.jpg",
     "sourcePath": "photos.20"
   },
   {
-    "index": 22,
     "path": "/assets/references/reference-22.jpg",
     "sourcePath": "photos.21"
   },
   {
-    "index": 23,
     "path": "/assets/references/reference-23.jpg",
     "sourcePath": "photos.22"
   },
   {
-    "index": 24,
     "path": "/assets/references/reference-24.jpg",
     "sourcePath": "photos.23"
   }

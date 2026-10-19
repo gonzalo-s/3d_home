@@ -6,6 +6,9 @@ export async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const headers = { 'Cache-Control': 'private, no-store, max-age=0' };
 
+  // Only these generic brand icons are public; house images and bundles stay private.
+  if (['/favicon.ico', '/icon.svg', '/apple-icon.png'].includes(pathname)) return NextResponse.next();
+
   // The library's self-contained login/error/signout pages need no app bundles.
   // Keep every other path protected: the Three.js bundles contain house data.
   if (pathname.startsWith('/api/auth/')) return NextResponse.next({ headers });
