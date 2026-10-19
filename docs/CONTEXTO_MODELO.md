@@ -21,6 +21,9 @@
 
 ## Interfaz y comportamiento
 
+- Las capas de electricidad, instalaciones y datos empiezan apagadas, incluidas sus opciones individuales. Los interruptores de grupo abren las opciones sin activarlas todas; al apagar un grupo se ocultan sus overlays y se conserva la selección. En móvil, Luz y sol comienza con el deslizador horario y una flecha para abrir toda la configuración, manteniendo el modelo sin oscurecer.
+- El comedor tiene referencias propias de perspectiva y planta 2D centradas en su mesa, cuatro sillas, aparador y puerta balcón, basadas en el modelo actual. Selector e icono de cámara abren esas vistas; la cocina conserva sus imágenes anteriores. Capturas, prompts y límites en `docs/DINING_REFERENCE_PROMPTS.json`.
+- En móvil se prioriza el canvas, con barra de plantas/vistas y cuatro herramientas inferiores: Explorar, Referencias, Luz y sol y Capas. Los paneles mantienen los controles montados y el motor conserva una sola instancia. Las referencias usan un diálogo modal con cierre exterior, Escape y ampliación; ver `docs/UI_MOBILE.md`.
 - Los iconos de cámara son más pequeños y abren referencias con clic o toque. Hover solo resalta el icono; el panel permanece abierto al retirar el cursor, hasta cerrarlo o elegir otra referencia. Arrastrar la vista no abre fotos.
 - Las caras verticales de la losa de PA usan el mismo material beige de fachada para evitar la franja gris exterior. Se conservan el acabado superior, la cara inferior, el espesor de 0,18 m y el hueco de escalera.
 - El cielorraso superior tiene una holgura gráfica de 0,02 m hacia dentro del perímetro exterior para evitar caras coplanares con la fachada. Sus cantos usan material de fachada; las caras horizontales conservan el blanco, la altura y el espesor originales, así como los tres huecos de claraboyas. No cambia la huella CAD ni el techo de chapa.

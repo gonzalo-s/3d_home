@@ -142,5 +142,21 @@
         "image": "/assets/references/cad/cad-garden-plan.png"
       }
     ]
+  },
+  {
+    "id": "dining-room",
+    "photoIndex": 10,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-dining-room.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-dining-room-plan.png"
+      }
+    ]
   }
 ]

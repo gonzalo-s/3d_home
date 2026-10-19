@@ -818,17 +818,21 @@ function Tw(o, A) {
   }
 }
 function p0() {
+  const dataVisible = FA("#iotData").checked && (FA("#iotLayer")?.checked ?? true);
   for (let o of Object.values(Cr)) {
-    o.layer.visible = FA("#electrical").checked, o.dataLayer.visible = FA("#iotData").checked;
+    o.layer.visible = FA("#electrical").checked, o.dataLayer.visible = dataVisible;
     for (let [A, e] of Object.entries({ outlets: "electricOutlets", lights: "electricLights", routes: "electricRoutes", drops: "electricDrops", numbers: "electricNumbers", panels: "electricPanels", annotations: "electricAnnotations" })) o.groups[A].visible = FA("#" + e).checked;
   }
-  FA("#electricOptions").hidden = !FA("#electrical").checked, FA("#electrical").checked || (FA("#electricDetail").hidden = true), FA("#iotData").checked || (FA("#iotDetail").hidden = true), U0();
+  FA("#electricOptions").hidden = !FA("#electrical").checked, FA("#electrical").checked || (FA("#electricDetail").hidden = true), dataVisible || (FA("#iotDetail").hidden = true), U0();
 }
 function mw(o) {
   let detail = FA(o.kind === "data" ? "#iotDetail" : "#electricDetail");
   detail.hidden = false, detail.textContent = o.id + " \xB7 " + (o.floor === "pb" ? "Planta baja" : "Planta alta") + " \xB7 " + (Cw[o.kind] || "Tablero") + " \xB7 altura " + o.height.toFixed(2) + " m desde piso. " + (o.heightInferred ? "Altura interpretada, pendiente de confirmar. " : "") + (o.corrected ? o.kind === "data" ? "Ubicaci\xF3n actualizada para IOT. " : "Ubicaci\xF3n de luminaria actualizada. " : o.source === "DWG" ? "Ubicaci\xF3n del DWG. " : "Ubicaci\xF3n estimada desde PDF. ") + (o.feed === "underground" ? "Alimentaci\xF3n de la isla por debajo del piso, confirmada por Gonza. Sin bajadas desde cielorraso. Profundidad y conexiones internas esquem\xE1ticas; posici\xF3n adaptada a la isla actual." : o.uninstalled ? "Punto el\xE9ctrico exterior; luminaria no instalada." : o.provisional ? "Punto de iluminaci\xF3n provisional bajo claraboya; sin spot instalado." : o.kind === "light" ? (o.mount === "wall" ? "Aplique de pared hacia abajo. " : "Spot de techo. ") + (o.circuitNote || "") : o.kind === "data" ? "D = datos; no se inventa su cableado." : o.route ? "Asociaci\xF3n cercana al CAD: " + o.route + ". Bajada esquem\xE1tica." : o.kind === "panel" ? "Altura del tablero esquem\xE1tica. Circuitos del plano: " + o.circuits.join(" | ") : "Sin coincidencia inequ\xEDvoca de conexi\xF3n en el CAD; bajada esquem\xE1tica.");
 }
-for (let o of ["electrical", "electricOutlets", "electricLights", "iotData", "electricRoutes", "electricDrops", "electricNumbers", "electricPanels", "electricAnnotations"]) FA("#" + o).onchange = p0;
+for (let o of ["electrical", "electricOutlets", "electricLights", "iotLayer", "iotData", "electricRoutes", "electricDrops", "electricNumbers", "electricPanels", "electricAnnotations"]) {
+  const control = FA("#" + o);
+  if (control) control.onchange = p0;
+}
 FA("#electricPB").onclick = () => Yt({ title: "Electricidad \xB7 PDF previo PB", photo: 16 });
 FA("#electricPA").onclick = () => Yt({ title: "Electricidad \xB7 PDF previo PA", photo: 17 });
 function Xw(o, A) {
@@ -894,19 +898,24 @@ function mr() {
 FA("#bathCeiling").onchange = mr;
 function w0() {
   let o = FA("#view");
-  be.setSize(o.clientWidth, o.clientHeight), Xt.aspect = o.clientWidth / o.clientHeight, Xt.updateProjectionMatrix(), TP.forEach((A) => A.resolution.set(o.clientWidth, o.clientHeight));
+  be.setSize(o.clientWidth, o.clientHeight), Xt.aspect = o.clientWidth / o.clientHeight;
+  // Preserve room around the house in portrait viewports without changing model geometry.
+  Xt.zoom = Math.min(1, Xt.aspect / 0.8);
+  Xt.updateProjectionMatrix(), TP.forEach((A) => A.resolution.set(o.clientWidth, o.clientHeight));
 }
 var resizeObserver = new ResizeObserver(w0);
 resizeObserver.observe(FA("#view"));
-for (let [o, A] of [["pbToggle", "Planta baja"], ["paToggle", "Planta alta"]]) FA("#" + o).onclick = () => {
+for (let o of ["pbToggle", "paToggle"]) FA("#" + o).onclick = () => {
   let e = FA("#" + o).getAttribute("aria-pressed") !== "true";
-  FA("#" + o).setAttribute("aria-pressed", String(e)), FA("#" + o).textContent = A + " \xB7 " + (e ? "ON" : "OFF"), Go = null, mr();
+  FA("#" + o).setAttribute("aria-pressed", String(e)), Go = null, mr();
 };
 for (let o of ["labels", "cad"]) listen(FA("#" + o), "change", mr);
 FA("#top").onclick = () => {
+  FA("#top").setAttribute("aria-pressed", "true"), FA("#perspective").setAttribute("aria-pressed", "false");
   Xt.position.set(4, 28, -7), Zi.target.set(4, 0, -7);
 };
 FA("#perspective").onclick = () => {
+  FA("#perspective").setAttribute("aria-pressed", "true"), FA("#top").setAttribute("aria-pressed", "false");
   Xt.position.set(27, 26, 27), Zi.target.set(3, 4, -5);
 };
 FA("#cover").onchange = () => {
@@ -976,6 +985,10 @@ function Yt(o) {
   FA("#roomtitle").textContent = o.title, FA("#reference").hidden = false;
 }
 function c0(o) {
+  if (ia[o]?.[0] === "Oficina") {
+    Yt(OFFICE_REFERENCE);
+    return;
+  }
   if (o === 12) {
     Yt({ title: "Ba\xF1o PB / Escalera", photo: 22 });
     return;
@@ -1081,7 +1094,7 @@ function Iw() {
 Qw();
 function referenceImageUrl(o) {
   if (o.image) return encodeURI(o.image);
-  let A = o.title === "Ba\xF1o PB / Escalera" ? 22 : o.title === "Cocina" ? 15 : o.title === "Comedor" ? 13 : o.photo;
+  let A = o.title === "Ba\xF1o PB / Escalera" ? 22 : o.title === "Cocina" ? 15 : o.photo;
   return Hr.photos[A] ?? null;
 }
 var roomPhotoHotspots = createRoomPhotoHotspots({

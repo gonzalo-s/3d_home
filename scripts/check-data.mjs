@@ -10,7 +10,7 @@ assert.equal(assets.length,24,'La referencia v39 contiene 24 imágenes');
 for(const asset of assets)await access(path.join(root,'public',asset.path));
 const house=await readJSON('house.json');
 const roomReferences=await readJSON('room-reference-views.json');
-assert.equal(roomReferences.length,9,'Nueve ambientes con perspectiva y planta');
+assert.equal(roomReferences.length,10,'Diez ambientes con perspectiva y planta');
 assert.equal(new Set(roomReferences.map(room=>room.photoIndex)).size,roomReferences.length);
 for(const room of roomReferences){
   assert.deepEqual(room.views.map(view=>view.kind),['perspective','plan']);

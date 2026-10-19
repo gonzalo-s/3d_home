@@ -1,18 +1,23 @@
 import { Check } from './Check';
+import { LayerGroup } from './LayerGroup';
 
 export function ElectricalSection() {
   return (
-      <section>
-      <h2>Electricidad</h2>
-      <Check id="electrical">Mostrar capa eléctrica</Check>
-      <div id="electricOptions" hidden>
-      <Check id="electricOutlets" defaultChecked>Tomas por altura</Check>
-      <Check id="electricLights" defaultChecked>Puntos de luz</Check>
-      <Check id="electricPanels" defaultChecked>Tableros</Check>
-      <Check id="electricRoutes" defaultChecked>Conexiones del CAD</Check>
-      <Check id="electricDrops" defaultChecked>Bajadas esquemáticas</Check>
+      <LayerGroup id="electrical" optionsId="electricOptions" title="Electricidad" description="Tomas, luces y circuitos">
+      <fieldset className="layer-subgroup"><legend>Elementos</legend>
+      <Check id="electricOutlets">Tomas por altura</Check>
+      <Check id="electricLights">Puntos de luz</Check>
+      <Check id="electricPanels">Tableros</Check>
+      </fieldset>
+      <fieldset className="layer-subgroup"><legend>Recorridos</legend>
+      <Check id="electricRoutes">Conexiones del CAD</Check>
+      <Check id="electricDrops">Bajadas esquemáticas</Check>
+      </fieldset>
+      <fieldset className="layer-subgroup"><legend>Etiquetas</legend>
       <Check id="electricNumbers">Identificadores</Check>
       <Check id="electricAnnotations">Referencias numeradas del plano</Check>
+      </fieldset>
+      <details className="layer-documents"><summary>Planos y criterios</summary>
       <details className="panel-info">
       <summary>Leyenda de electricidad</summary>
       <p className="note"><span style={{ color: '#e33' }}>●</span> Inferiores: 0,25 m<br /><span style={{ color: '#c29500' }}>●</span> Intermedios: 1,30 m<br /><span style={{ color: '#279cce' }}>●</span> Superiores: 2,30 m<br /><span style={{ color: '#17232d' }}>●</span> Iluminación · <span style={{ color: '#279662' }}>●</span> Datos<br />Rojo: conexiones de tomas · negro: luces · celeste: aires · violeta: otros trazados CAD, por revisar.</p></details>
@@ -24,6 +29,7 @@ export function ElectricalSection() {
       <div className="buttons">
       <button id="electricPB">PDF previo PB</button>
       <button id="electricPA">PDF previo PA</button></div>
-      <p id="electricDetail" className="note" hidden></p></div></section>
+      </details>
+      <p id="electricDetail" className="note" hidden></p></LayerGroup>
   );
 }

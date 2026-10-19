@@ -1,0 +1,19 @@
+{
+  "tool": "Built-in image_gen",
+  "basis": "Perspective and cropped orthographic captures of the actual current ground-floor Three.js dining area. Plan captured with a temporary 1.15m horizontal cut; engine geometry unchanged.",
+  "limitations": "Schematic AI-generated references, no verified scale. Rendering details and finishes approximate; no neighboring properties shown.",
+  "images": [
+    {
+      "kind": "perspective",
+      "prompt": "Use case: stylized-concept. Asset: dedicated DINING AREA CAD-style reference for a house viewer. Image 1 is the authoritative perspective capture of the actual CURRENT 3D model. Image 2 is the supplied kitchen illustration, ONLY a linework and materials style reference: do NOT copy its camera or composition. Draw the DINING TABLE AREA in the exact arrangement of image 1: one pale natural wood rectangular table, long axis running foreground to back wall, exactly FOUR black dining chairs, TWO along each long side, NONE at the short ends. Preserve the same room proportions, furniture placement and camera direction. On RIGHT, existing white two-leaf glazed garden balcony door with exterior security grille and a white radiator on EACH side; terracotta patio tiles outside with neutral daylight and no neighboring houses. On FAR wall keep the pale grey low sideboard and black rectangular TV above/behind it, as modeled. Keep the existing open doorway to the LEFT of that sideboard; do not add a door leaf. Only a narrow portion of the white kitchen island with black hob appears at LEFT edge for context. The table and four chairs must be the main subject; do NOT make another kitchen cabinetry or island illustration. White/off-white walls, grey tiled floor, simple closed white ceiling at existing height. Clean architectural CAD illustration with thin charcoal edges and restrained soft material shading, matching image 2 but no titles or labels. Natural moderate perspective, corrected verticals, no fisheye. No extra chairs, furniture, decor, table settings, people, measurements or text. Single landscape image.",
+      "layoutReference": "docs/reference-layouts/dining-room-perspective-3d.png",
+      "output": "public/assets/references/cad/cad-dining-room.png"
+    },
+    {
+      "kind": "plan",
+      "prompt": "Use case: infographic-diagram. Asset: dedicated true orthographic CAD TOP VIEW of the DINING AREA. Image 1 is the authoritative cropped horizontal section of the actual current 3D model. Image 2 is ONLY the supplied kitchen plan LINEWORK STYLE reference, never copy its kitchen layout. Faithfully trace image 1: a single pale natural wood rectangular table running vertically, exactly FOUR black chairs, TWO along LEFT long side and TWO along RIGHT long side, no end chairs. Preserve footprints, spacing and proportions from the model. In THIS overhead orientation the garden is at LEFT, with the existing glazed balcony doorway/grille and white radiator footprints flanking it, a small sliver of terracotta patio beyond. Pale grey sideboard/TV footprint sits against wall at BOTTOM. Keep the open circulation at TOP and RIGHT toward living/kitchen: do NOT enclose the dining area in invented walls. Grey tiled floor, light wood tabletop, dark chair outlines, thick dark wall sections and fine interior lines, soft neutral flat shading. Focus tightly on this table section as captured; no kitchen cabinetry, sink, fridge or island copied from image 2. Single plan on white margins, no perspective, no ceiling objects, no swing arcs, labels, dimensions, title, compass or text. Do not add furniture, people or neighboring properties.",
+      "layoutReference": "docs/reference-layouts/dining-room-plan-3d.png",
+      "output": "public/assets/references/cad/cad-dining-room-plan.png"
+    }
+  ]
+}
