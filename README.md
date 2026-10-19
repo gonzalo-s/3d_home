@@ -1,57 +1,43 @@
-# Casa Valle · paquete de migración v39
+# Casa Valle · Plano 3D
 
-Este paquete prepara el visor existente para migrarlo a una SPA con Next.js, React y TypeScript. Incluye una **base modular ejecutable con Vite**, el HTML de referencia y los datos e imágenes separados. No es todavía la aplicación Next.js terminada.
+Visor de la vivienda con Next.js, React, TypeScript y un motor Three.js imperativo. La interfaz funciona como SPA; Next.js agrega acceso privado con Google y una lista de cuentas autorizadas, configurada en el servidor.
 
-## Empezar en VS Code
+## Desarrollo
 
-1. Descomprimir y abrir esta carpeta en VS Code.
-2. Usar Node.js 22.12 o superior compatible con las dependencias fijadas.
-3. Ejecutar:
+Usar Node.js 24.x. Copiar `.env.example` a `.env.local` y configurar las credenciales Google, el secreto de sesión y las cuentas permitidas según [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Abrir la dirección que muestra Vite. Para comprobar el build:
+Abrir `http://localhost:3000`. Sin configuración de acceso, el visor queda bloqueado.
 
 ```sh
 npm run check:data
+npm run test:auth
+npm run typecheck
 npm run build
-npm run preview
+npm run test:auth:integration
+npm start
 ```
 
-La vista de referencia está en `reference/casa-valle-v39.html`. Se puede abrir directamente en el navegador. Contiene el modelo y las fotos originales embebidas.
+## Despliegue
 
-## Qué hay preparado
+Importar el repositorio en Vercel como Next.js. El build predeterminado genera `.next`. Las variables privadas y la configuración OAuth están detalladas en [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). No desplegar el build Vite de comparación: no incluye autenticación.
 
-| Archivo o carpeta | Uso |
-| --- | --- |
-| `src/main.js` | Orden explícito de inicialización de los sistemas |
-| `src/legacy/house-app.js` | Aplicación extraída y formateada; conserva nombres originales |
-| `src/legacy/three-runtime.js` | Runtime original congelado para mantener equivalencia |
-| `src/systems/lighting-and-electrical.js` | Código legible de luminarias, shader, nodos y conexiones corregidas |
-| `src/systems/solid-surfaces.js` | Espesor de superficies y separación entre plantas |
-| `src/systems/upstairs-air.js` | Unidades interiores de aire acondicionado |
-| `src/styles/viewer.css` | Estilos separados |
-| `src/data/house.json` | Geometría CAD y referencias fotográficas |
-| `src/data/electrical-source.json` | Datos eléctricos de entrada, antes de correcciones |
-| `src/data/installations.json` | Otras instalaciones |
-| `src/data/current-model-snapshot.json` | Estado final exportado del modelo v39, incluidas correcciones |
-| `src/data/asset-map.json` | Correspondencia entre las 24 imágenes y sus rutas originales |
-| `public/assets/references/` | Las 24 imágenes extraídas, sin cambiar sus bytes |
-| `AGENTS.md` | Reglas para el trabajo de Codex dentro del proyecto |
-| `PROMPT_PARA_CODEX.md` | Instrucción lista para iniciar la migración |
-| `docs/MIGRACION.md` | Etapas y arquitectura destino |
-| `docs/CONTEXTO_MODELO.md` | Medidas, decisiones y límites que deben conservarse |
-| `docs/VALIDACION.md` | Comprobaciones realizadas al preparar este paquete |
+## Modelo y migración
 
-## Dos datos distintos, dos propósitos
+- `src/app/` y `src/components/`: aplicación Next.js e interfaz React.
+- `src/auth/` y `src/proxy.ts`: acceso Google, sesiones y protección de páginas, fotos y bundles con datos de la casa.
+- `src/engine/`: sistemas de arquitectura, mobiliario, iluminación e instalaciones.
+- `src/legacy/` y `src/systems/`: módulos imperativos todavía en proceso de extracción.
+- `src/data/`: geometría CAD, instalaciones y snapshot final v39.
+- `public/assets/references/`: fotos y referencias del modelo.
+- `reference/casa-valle-v39.html`: referencia original inmutable, no publicada por Next.js.
 
-El arranque actual carga `electrical-source.json` y aplica las correcciones de `lighting-and-electrical.js`. El snapshot describe el **resultado final** de esa operación. No sustituir el archivo de entrada por el snapshot sin retirar primero las correcciones: duplicaría altas de puntos y recorridos.
+La migración modular sigue en curso; agregar autenticación no implica equivalencia visual completa ni terminar la extracción del legado. Conservar las medidas y los límites descritos en [docs/CONTEXTO_MODELO.md](docs/CONTEXTO_MODELO.md) y el método de [docs/MIGRACION.md](docs/MIGRACION.md).
 
-## Alcance pendiente
+`electrical-source.json` es la entrada anterior a correcciones y `current-model-snapshot.json` representa el resultado final. No aplicar otra vez los parches de arranque al snapshot.
 
-El bloque `legacy/house-app.js` ya es legible y está separado de la librería, pero sigue siendo código imperativo con identificadores cortos. Queda convertirlo por sistemas, crear la interfaz React, introducir tipos y unificar Three.js. El acceso temporal mediante `window.__model` debe reemplazarse por una API explícita.
-
-No se implementaron login, AR ni despliegue. El paquete incluye fotos y planos de la vivienda; usar un repositorio privado si se quiere mantener privado su contenido.
+Para comparación local sin autenticación se conservan `npm run dev:legacy`, `npm run build:legacy` y `npm run preview:legacy` (Vite). El paquete contiene planos y fotos privados; controlar también el acceso al repositorio.

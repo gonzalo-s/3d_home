@@ -25,7 +25,10 @@ export function HouseViewer() {
           </h1>
           <small>Modelo de trabajo basado en CAD y fotos actuales</small>
         </div>
-        <span className="badge">Circuito y luminarias · v39</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span className="badge">Circuito y luminarias · v39</span>
+          <a href="/api/auth/signout" style={{ color: 'inherit', fontSize: '12px' }}>Cerrar sesión</a>
+        </div>
       </header>
       <main>
         <ControlPanel />

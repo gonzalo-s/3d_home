@@ -4,17 +4,23 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
     "check:data": "node scripts/check-data.mjs",
     "dev:next": "next dev --hostname 0.0.0.0",
     "build:next": "next build",
     "start:next": "next start --hostname 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "start": "next start --hostname 0.0.0.0",
+    "dev:legacy": "vite --host 0.0.0.0",
+    "build:legacy": "vite build",
+    "preview:legacy": "vite preview --host 0.0.0.0",
+    "test:auth": "node --test tests/auth-access.test.mjs",
+    "test:auth:integration": "node scripts/check-auth.mjs"
   },
   "dependencies": {
     "next": "16.4.2",
+    "next-auth": "^4.24.15",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "three": "0.186.1"
@@ -27,6 +33,6 @@
     "vite": "8.3.4"
   },
   "engines": {
-    "node": ">=22.12.0"
+    "node": "24.x"
   }
 }
