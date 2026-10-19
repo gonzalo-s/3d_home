@@ -35,8 +35,6 @@ export function ReferenceDialog() {
 
   function close() {
     if (dialogRef.current) dialogRef.current.hidden = true;
-    const selector = document.querySelector<HTMLSelectElement>('#room');
-    if (selector) selector.value = '';
     setZoomed(false);
   }
 
@@ -51,11 +49,9 @@ export function ReferenceDialog() {
       onClose={() => {
         // close events are queued: a newer reference may already have reopened the dialog.
         if (!dialogRef.current?.hidden || dialogRef.current.open) return;
-        // A mobile reference selection closes the controls drawer while the modal opens.
-        if (document.activeElement === document.body || document.activeElement?.closest('[inert]')) {
-          const mobileButton = document.querySelector<HTMLButtonElement>('#mobile-references');
-          if (mobileButton?.getClientRects().length) mobileButton.focus();
-          else document.querySelector<HTMLSelectElement>('#room')?.focus();
+        const focused = document.activeElement;
+        if (focused === document.body || focused?.closest('[inert]') || (focused instanceof HTMLElement && !focused.getClientRects().length)) {
+          document.querySelector<HTMLButtonElement>('#perspective')?.focus();
         }
       }}
       onPointerDown={(event) => { outsideStart.current = isOutside(event); }}

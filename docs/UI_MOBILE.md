@@ -5,7 +5,7 @@ El visor mantiene una sola instancia del motor y conserva los controles existent
 ## Navegación
 
 - En teléfonos, la escena ocupa el espacio principal. La barra superior permite activar PB/PA y alternar 3D/vista desde arriba.
-- El menú inferior abre cuatro grupos: Explorar, Referencias, Luz y sol, y Capas. Cada panel tiene scroll vertical propio y puede cerrarse con su botón, tocando fuera o con Escape.
+- El menú inferior abre tres grupos: Explorar, Luz y sol y Capas. Cada panel tiene scroll vertical propio y puede cerrarse con su botón, tocando fuera o con Escape.
 - Mientras un panel móvil está abierto, la escena y el encabezado quedan inertes. El foco de teclado permanece dentro de los controles.
 - Se aplica el mismo diseño en teléfonos en horizontal hasta 1000 px de ancho y 500 px de alto. En escritorio se conserva el panel lateral.
 - La proyección de cámara se adapta a pantallas estrechas para mantener margen alrededor de la casa; no se modifican posiciones ni medidas del modelo.
@@ -13,13 +13,13 @@ El visor mantiene una sola instancia del motor y conserva los controles existent
 
 ## Referencias
 
-`ReferenceDialog` conecta el atributo `hidden` que utiliza el motor con un diálogo modal nativo. Las imágenes del selector, de los iconos de cámara y de los planos de instalaciones comparten el mismo diálogo.
+`ReferenceDialog` conecta el atributo `hidden` que utiliza el motor con un diálogo modal nativo. Las imágenes de los iconos de cámara y de los planos de instalaciones comparten el mismo diálogo.
 
 - Cierre con botón, Escape o gesto que empieza y termina fuera del popup. Un clic interior o un arrastre que sale desde la imagen no lo cierra.
 - Foco contenido en el modal y fondo inerte; al cerrar se recupera el acceso a los controles.
 - Vista ajustada al espacio disponible y botón Ampliar/Ajustar para inspeccionar detalles desplazándose por la imagen.
-- Indicaciones de carga y error. Al cerrar se reinicia el selector, permitiendo abrir otra vez el mismo ambiente.
-- El selector de oficina utiliza el dibujo suministrado que también usan sus iconos de cámara.
+- Indicaciones de carga y error. Las imágenes se abren desde los iconos de cámara; no hay un selector de ambientes separado.
+- El icono de oficina utiliza su dibujo suministrado.
 
 ## Comprobación
 
@@ -36,3 +36,5 @@ En móvil, Luz y sol comienza con el deslizador horario y una flecha para desple
 Las capas se agrupan en tarjetas de Electricidad, Instalaciones y Red y datos, con un interruptor de grupo y opciones subordinadas indentadas. Todos los grupos y opciones empiezan apagados. Activar un grupo abre sus opciones, sin seleccionar automáticamente ninguna capa. Desactivarlo oculta todos sus overlays y conserva las opciones elegidas para una próxima activación. Los planos y las explicaciones se consultan aparte dentro del grupo. Los muebles, las luminarias físicas y las cámaras del modelo no son overlays de estas tarjetas.
 
 La jerarquía de capas se comprobó contra los grupos Three.js de PB/PA: arranque oculto, activación independiente, apagado por grupo y selección conservada. Se verificaron deslizador/fecha/hora y expansión en móvil, configuración completa en escritorio, tamaños 320×568, 390×844, 844×390 y 1440×1000, y montaje/desmontaje único en Strict Mode. También pasaron las comprobaciones de interfaz sobre Next.js de producción en teléfono y escritorio, incluido el popup de planos fuente.
+
+El selector de referencias y su pestaña móvil se retiraron por duplicar los iconos de cámara. Los detalles de precisión del modelo permanecen en Explorar. Al cerrar una imagen, si el control anterior ya no está visible, el foco vuelve al botón de vista 3D.

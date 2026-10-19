@@ -8,7 +8,7 @@ El modelo parte de Casa Valle v39 y de sus datos CAD, con ajustes documentados a
 
 - Explorar planta baja, planta alta o ambas, con vistas en perspectiva y desde arriba.
 - Girar y acercar la cámara; inspeccionar interiores mediante la transparencia de muros exteriores.
-- Consultar referencias por ambiente desde el selector o con clic/toque en los iconos de cámara. Diez ambientes incluyen perspectiva y planta 2D de estilo CAD.
+- Consultar referencias por ambiente con clic/toque en los iconos de cámara. Diez ambientes incluyen perspectiva y planta 2D de estilo CAD.
 - Mostrar u ocultar techo, cielorrasos, cubierta del patio, etiquetas y capas de instalaciones.
 - Cambiar fecha, hora y ubicación solar para revisar luz diurna, sombras y transición día/noche.
 - Consultar puntos, tableros y recorridos eléctricos, y visualizar las luminarias instaladas.

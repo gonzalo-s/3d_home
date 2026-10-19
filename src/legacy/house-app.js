@@ -1001,13 +1001,17 @@ function c0(o) {
   Yt({ title: A[0], photo: A[3] });
 }
 FA("#closePhoto").onclick = () => FA("#reference").hidden = true;
-FA("#room").onchange = (o) => {
-  o.target.value !== "" && c0(+o.target.value);
-};
-[...ia.map((o) => o[0]), "Cocina \xB7 PB", "Comedor \xB7 PB", "Living \xB7 PB", "Jard\xEDn desde cuarto del fondo", "Ba\xF1o PB / Escalera"].forEach((o, A) => {
-  let e = document.createElement("option");
-  e.value = A, e.textContent = o, FA("#room").append(e);
-});
+// Only the standalone migration comparison still supplies a room selector.
+const roomSelector = FA("#room");
+if (roomSelector) {
+  roomSelector.onchange = (o) => {
+    o.target.value !== "" && c0(+o.target.value);
+  };
+  [...ia.map((o) => o[0]), "Cocina \xB7 PB", "Comedor \xB7 PB", "Living \xB7 PB", "Jard\xEDn desde cuarto del fondo", "Ba\xF1o PB / Escalera"].forEach((o, A) => {
+    let e = document.createElement("option");
+    e.value = A, e.textContent = o, roomSelector.append(e);
+  });
+}
 var { group: Xr, sphere: XP } = createSunReference(gt);
 var Po = new YA();
 Po.userData.environment = "calle";

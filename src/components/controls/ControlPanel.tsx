@@ -7,11 +7,10 @@ import { ElectricalSection } from './ElectricalSection';
 import { InstallationsSection } from './InstallationsSection';
 import { IotSection } from './IotSection';
 import { SunSection } from './SunSection';
-import { ReferencePhotosSection } from './ReferencePhotosSection';
+import { ModelInfoSection } from './ModelInfoSection';
 
 const tabs = [
   { id: 'explore', label: 'Explorar', icon: 'explore' },
-  { id: 'references', label: 'Referencias', icon: 'references' },
   { id: 'sun', label: 'Luz y sol', icon: 'sun' },
   { id: 'layers', label: 'Capas', icon: 'layers' },
 ] as const;
@@ -67,10 +66,9 @@ export function ControlPanel() {
             <button type="button" aria-label="Cerrar controles" onClick={close}><Icon name="close" /></button>
           </div>
           <div className="controls-scroll">
-            <div className="control-group" data-panel="explore"><ViewSection /></div>
-            <div className="control-group" data-panel="references"><ReferencePhotosSection /></div>
-            <div className="control-group" data-panel="sun"><SunSection /></div>
+            <div className="control-group" data-panel="explore"><ViewSection /><ModelInfoSection /></div>
             <div className="control-group" data-panel="layers"><div className="layers-intro"><h2>Capas del modelo</h2><p>Abrí un grupo y elegí qué mostrar.</p></div><ElectricalSection /><InstallationsSection /><IotSection /></div>
+            <div className="control-group" data-panel="sun"><SunSection /></div>
           </div>
         </div>
         <nav className="mobile-navigation" aria-label="Herramientas del modelo">
