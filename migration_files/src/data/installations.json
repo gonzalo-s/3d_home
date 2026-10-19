@@ -1,0 +1,5416 @@
+{
+  "source": "Casa Instalaciones.dwg",
+  "status": "Instalaciones actuales confirmadas por Gonza",
+  "floors": {
+    "pb": {
+      "routes": [
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.24973,
+              13.13717
+            ],
+            [
+              7.26557,
+              7.94659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.26557,
+              7.94659
+            ],
+            [
+              7.26557,
+              8.04659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.26557,
+              8.04659
+            ],
+            [
+              7.86557,
+              8.04659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.86557,
+              8.04659
+            ],
+            [
+              7.86557,
+              7.44659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.86557,
+              7.44659
+            ],
+            [
+              7.26557,
+              7.44659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.26557,
+              7.44659
+            ],
+            [
+              7.26557,
+              7.94659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.56557,
+              8.04659
+            ],
+            [
+              7.56557,
+              14.32962
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.925,
+              7.635
+            ],
+            [
+              0.925,
+              7.915
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.925,
+              7.915
+            ],
+            [
+              7.26557,
+              7.74804
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.83,
+              0.21489
+            ],
+            [
+              2.26043,
+              0.64532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.40264,
+              0.64532
+            ],
+            [
+              2.26043,
+              0.64532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.09926,
+              0.89532
+            ],
+            [
+              7.09926,
+              0.99532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.09926,
+              0.99532
+            ],
+            [
+              7.69926,
+              0.99532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.69926,
+              0.99532
+            ],
+            [
+              7.69926,
+              0.39532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.69926,
+              0.39532
+            ],
+            [
+              7.09926,
+              0.39532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.09926,
+              0.39532
+            ],
+            [
+              7.09926,
+              0.89532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.56557,
+              7.44659
+            ],
+            [
+              7.56557,
+              -0.77494
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.40264,
+              0.64532
+            ],
+            [
+              7.56557,
+              0.48239
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.14926,
+              0.94532
+            ],
+            [
+              7.64926,
+              0.94532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.14926,
+              0.44532
+            ],
+            [
+              7.14926,
+              0.94532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.64926,
+              0.94532
+            ],
+            [
+              7.64926,
+              0.44532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.64926,
+              0.44532
+            ],
+            [
+              7.14926,
+              0.44532
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.31557,
+              7.99659
+            ],
+            [
+              7.81557,
+              7.99659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.81557,
+              7.99659
+            ],
+            [
+              7.81557,
+              7.49659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.81557,
+              7.49659
+            ],
+            [
+              7.31557,
+              7.49659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              7.31557,
+              7.49659
+            ],
+            [
+              7.31557,
+              7.99659
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.49,
+              9.31363
+            ],
+            [
+              1.41223,
+              9.05841
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.41223,
+              9.05841
+            ],
+            [
+              1.40208,
+              8.87645
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.56932,
+              8.86527
+            ],
+            [
+              1.70955,
+              8.86527
+            ],
+            [
+              1.70955,
+              8.72588
+            ],
+            [
+              1.56932,
+              8.72588
+            ],
+            [
+              1.56932,
+              8.86527
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              2.175,
+              9.2856
+            ],
+            [
+              1.70955,
+              8.86527
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.41224,
+              8.09535
+            ],
+            [
+              1.60152,
+              7.89719
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.41224,
+              8.73031
+            ],
+            [
+              1.41224,
+              8.09535
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              1.56932,
+              8.72588
+            ],
+            [
+              1.39118,
+              8.62065
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              2.10288,
+              8.92343
+            ],
+            [
+              1.70955,
+              8.79558
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              3.33222,
+              14.18038
+            ],
+            [
+              3.47244,
+              14.18038
+            ],
+            [
+              3.47244,
+              14.04099
+            ],
+            [
+              3.33222,
+              14.04099
+            ],
+            [
+              3.33222,
+              14.18038
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              3.47244,
+              14.11068
+            ],
+            [
+              4.91674,
+              14.68646
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              4.08656,
+              14.95797
+            ],
+            [
+              3.40233,
+              14.18038
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              3.40249,
+              14.02142
+            ],
+            [
+              3.409,
+              10.79983
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53,
+              0.21641
+            ],
+            [
+              5.53,
+              8.49088
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.54177,
+              12.85374
+            ],
+            [
+              5.78763,
+              13.07182
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.51369,
+              14.84011
+            ],
+            [
+              5.51369,
+              14.96708
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.45126,
+              0.23649
+            ],
+            [
+              5.45126,
+              8.44711
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.48626,
+              15.05171
+            ],
+            [
+              5.79682,
+              15.05171
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.83182,
+              15.01713
+            ],
+            [
+              5.83007,
+              14.8592
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.48626,
+              15.05171
+            ],
+            [
+              5.47264,
+              15.04896
+            ],
+            [
+              5.46152,
+              15.04146
+            ],
+            [
+              5.45402,
+              15.03033
+            ],
+            [
+              5.45126,
+              15.01671
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.83182,
+              15.01713
+            ],
+            [
+              5.83121,
+              15.02389
+            ],
+            [
+              5.82927,
+              15.03033
+            ],
+            [
+              5.82608,
+              15.03629
+            ],
+            [
+              5.82171,
+              15.04156
+            ],
+            [
+              5.81636,
+              15.04588
+            ],
+            [
+              5.81031,
+              15.04907
+            ],
+            [
+              5.80373,
+              15.05103
+            ],
+            [
+              5.79682,
+              15.05171
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.52817,
+              8.70773
+            ],
+            [
+              0.52817,
+              9.30043
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.75201,
+              9.36804
+            ],
+            [
+              5.41627,
+              9.36804
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.52817,
+              8.66906
+            ],
+            [
+              0.52817,
+              8.51711
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.56317,
+              8.48211
+            ],
+            [
+              5.41627,
+              8.48211
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.45126,
+              9.40304
+            ],
+            [
+              5.45126,
+              15.01671
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.58101,
+              8.66285
+            ],
+            [
+              0.58101,
+              9.27097
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.616,
+              9.30597
+            ],
+            [
+              5.49502,
+              9.30597
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.58101,
+              8.66285
+            ],
+            [
+              0.58101,
+              8.56088
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.616,
+              8.52588
+            ],
+            [
+              5.49502,
+              8.52588
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53,
+              9.34097
+            ],
+            [
+              5.53,
+              12.82756
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.41627,
+              9.36804
+            ],
+            [
+              5.42989,
+              9.37079
+            ],
+            [
+              5.44101,
+              9.37829
+            ],
+            [
+              5.44851,
+              9.38942
+            ],
+            [
+              5.45126,
+              9.40304
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.49502,
+              9.30597
+            ],
+            [
+              5.50863,
+              9.30872
+            ],
+            [
+              5.51975,
+              9.31622
+            ],
+            [
+              5.52725,
+              9.32735
+            ],
+            [
+              5.53,
+              9.34097
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53,
+              8.49088
+            ],
+            [
+              5.52932,
+              8.49774
+            ],
+            [
+              5.52734,
+              8.50427
+            ],
+            [
+              5.52412,
+              8.51029
+            ],
+            [
+              5.51975,
+              8.51562
+            ],
+            [
+              5.51443,
+              8.52
+            ],
+            [
+              5.5084,
+              8.52321
+            ],
+            [
+              5.50187,
+              8.5252
+            ],
+            [
+              5.49502,
+              8.52588
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.45126,
+              8.44711
+            ],
+            [
+              5.44851,
+              8.46073
+            ],
+            [
+              5.44101,
+              8.47186
+            ],
+            [
+              5.42989,
+              8.47936
+            ],
+            [
+              5.41627,
+              8.48211
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.616,
+              9.30597
+            ],
+            [
+              0.60238,
+              9.30322
+            ],
+            [
+              0.59126,
+              9.29572
+            ],
+            [
+              0.58376,
+              9.2846
+            ],
+            [
+              0.58101,
+              9.27097
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.58101,
+              8.56088
+            ],
+            [
+              0.58169,
+              8.55402
+            ],
+            [
+              0.58367,
+              8.54748
+            ],
+            [
+              0.58689,
+              8.54146
+            ],
+            [
+              0.59126,
+              8.53613
+            ],
+            [
+              0.59659,
+              8.53176
+            ],
+            [
+              0.60261,
+              8.52854
+            ],
+            [
+              0.60914,
+              8.52655
+            ],
+            [
+              0.616,
+              8.52588
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.52817,
+              8.51711
+            ],
+            [
+              0.53092,
+              8.50348
+            ],
+            [
+              0.53842,
+              8.49236
+            ],
+            [
+              0.54955,
+              8.48486
+            ],
+            [
+              0.56317,
+              8.48211
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.52817,
+              9.03806
+            ],
+            [
+              0.52817,
+              9.33278
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.56312,
+              9.36778
+            ],
+            [
+              0.75201,
+              9.36804
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.56312,
+              9.36778
+            ],
+            [
+              0.54951,
+              9.36502
+            ],
+            [
+              0.5384,
+              9.35751
+            ],
+            [
+              0.53092,
+              9.34639
+            ],
+            [
+              0.52817,
+              9.33278
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.53289,
+              8.84143
+            ],
+            [
+              0.53289,
+              8.8801
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.50166,
+              8.8533
+            ],
+            [
+              0.43259,
+              8.80146
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.58595,
+              8.64799
+            ],
+            [
+              0.58595,
+              8.60932
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.55471,
+              8.63612
+            ],
+            [
+              0.37243,
+              8.77012
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.44203,
+              13.4146
+            ],
+            [
+              5.44203,
+              13.45327
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.47326,
+              13.42647
+            ],
+            [
+              5.79803,
+              13.1827
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.44486,
+              9.94361
+            ],
+            [
+              5.44486,
+              9.98228
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.47641,
+              9.95598
+            ],
+            [
+              5.70768,
+              9.77764
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.52366,
+              9.57345
+            ],
+            [
+              5.52366,
+              9.53478
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.55489,
+              9.56158
+            ],
+            [
+              5.73709,
+              9.69834
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.44493,
+              6.84449
+            ],
+            [
+              5.44493,
+              6.88316
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.47647,
+              6.85686
+            ],
+            [
+              5.63755,
+              6.73265
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.52392,
+              6.60945
+            ],
+            [
+              5.52392,
+              6.57078
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.55565,
+              6.59679
+            ],
+            [
+              5.69287,
+              6.69979
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.44094,
+              4.91182
+            ],
+            [
+              5.44094,
+              4.95049
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.47249,
+              4.92419
+            ],
+            [
+              5.63356,
+              4.79997
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.51993,
+              4.67678
+            ],
+            [
+              5.51993,
+              4.63811
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.55166,
+              4.66412
+            ],
+            [
+              5.68888,
+              4.76712
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.44094,
+              2.36105
+            ],
+            [
+              5.44094,
+              2.39972
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.47249,
+              2.37342
+            ],
+            [
+              5.63356,
+              2.24921
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.51993,
+              2.12601
+            ],
+            [
+              5.51993,
+              2.08734
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.55166,
+              2.11335
+            ],
+            [
+              5.68888,
+              2.21636
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.75136,
+              14.99133
+            ],
+            [
+              5.82377,
+              15.35382
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.60228,
+              14.9912
+            ],
+            [
+              5.56331,
+              15.35984
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74575,
+              15.00614
+            ],
+            [
+              0.74575,
+              15.07791
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.7575,
+              15.09085
+            ],
+            [
+              4.02618,
+              15.09085
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              4.02618,
+              15.09085
+            ],
+            [
+              4.02618,
+              14.81059
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              4.02618,
+              15.09085
+            ],
+            [
+              5.06292,
+              15.09085
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.06292,
+              15.09085
+            ],
+            [
+              5.06292,
+              14.68641
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.80669,
+              15.02106
+            ],
+            [
+              0.80683,
+              15.05667
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.81937,
+              15.06897
+            ],
+            [
+              5.30685,
+              15.06897
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.32245,
+              15.05337
+            ],
+            [
+              5.32245,
+              14.87207
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.28112,
+              14.87207
+            ],
+            [
+              5.37491,
+              14.87207
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.33804,
+              15.06897
+            ],
+            [
+              5.75136,
+              15.06897
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              5.75136,
+              14.99133
+            ],
+            [
+              5.75136,
+              15.06897
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74545,
+              14.99608
+            ],
+            [
+              0.74545,
+              9.14942
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74545,
+              9.14942
+            ],
+            [
+              0.82785,
+              9.14942
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.30993,
+              9.14942
+            ],
+            [
+              1.30993,
+              9.42119
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.83979,
+              9.16137
+            ],
+            [
+              0.83979,
+              9.27438
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.78838,
+              9.27438
+            ],
+            [
+              0.89121,
+              9.27438
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.79726,
+              9.10724
+            ],
+            [
+              0.79726,
+              9.01599
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74118,
+              9.01599
+            ],
+            [
+              0.85335,
+              9.01599
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74545,
+              9.1222
+            ],
+            [
+              0.78231,
+              9.1222
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.85174,
+              9.14942
+            ],
+            [
+              1.30993,
+              9.14942
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.81222,
+              9.1223
+            ],
+            [
+              2.21192,
+              9.1223
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.21192,
+              9.1223
+            ],
+            [
+              2.21122,
+              9.02753
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              3.85522,
+              15.09085
+            ],
+            [
+              3.85522,
+              14.86388
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              3.89063,
+              14.86388
+            ],
+            [
+              3.8198,
+              14.86388
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.79726,
+              9.10724
+            ],
+            [
+              0.23834,
+              9.10724
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.23834,
+              9.10724
+            ],
+            [
+              0.23834,
+              7.58913
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.23834,
+              7.58913
+            ],
+            [
+              1.04768,
+              7.58913
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.04768,
+              7.57558
+            ],
+            [
+              1.04768,
+              7.69442
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.19356,
+              15.02787
+            ],
+            [
+              5.19356,
+              14.99365
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.14666,
+              14.87245
+            ],
+            [
+              5.24045,
+              14.87245
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.19356,
+              15.02787
+            ],
+            [
+              5.60431,
+              15.02787
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.60431,
+              15.02787
+            ],
+            [
+              5.60485,
+              14.99145
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.19356,
+              14.96245
+            ],
+            [
+              5.19356,
+              14.87245
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.178,
+              14.97691
+            ],
+            [
+              4.86136,
+              14.97691
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              4.86136,
+              14.97691
+            ],
+            [
+              4.86136,
+              14.6909
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.19356,
+              15.00807
+            ],
+            [
+              4.4512,
+              15.00807
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.61056,
+              9.18986
+            ],
+            [
+              0.69295,
+              9.18986
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.7049,
+              9.2018
+            ],
+            [
+              0.7049,
+              9.31481
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.65348,
+              9.31481
+            ],
+            [
+              0.75632,
+              9.31481
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.66237,
+              9.14768
+            ],
+            [
+              0.66237,
+              9.05642
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.60629,
+              9.05642
+            ],
+            [
+              0.71845,
+              9.05642
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.61056,
+              9.16263
+            ],
+            [
+              0.64741,
+              9.16263
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.71678,
+              9.18858
+            ],
+            [
+              1.64967,
+              9.18858
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.64967,
+              9.18858
+            ],
+            [
+              1.64967,
+              9.43326
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.67721,
+              9.16443
+            ],
+            [
+              1.99401,
+              9.16081
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.99401,
+              9.16081
+            ],
+            [
+              2.0012,
+              9.02371
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              4.4387,
+              0.42368
+            ],
+            [
+              4.4387,
+              14.99557
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              5.19356,
+              15.02787
+            ],
+            [
+              0.64957,
+              15.02787
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.69651,
+              0.16312
+            ],
+            [
+              1.69651,
+              0.42368
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              4.4387,
+              0.42368
+            ],
+            [
+              1.69651,
+              0.42368
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.49703,
+              -0.16923
+            ],
+            [
+              7.64746,
+              -0.16923
+            ],
+            [
+              7.64746,
+              -0.5094
+            ],
+            [
+              7.49703,
+              -0.5094
+            ],
+            [
+              7.49703,
+              -0.16923
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.56557,
+              -0.16923
+            ],
+            [
+              7.56557,
+              0.1358
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.56557,
+              0.1358
+            ],
+            [
+              7.11961,
+              0.1358
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              4.5,
+              0.79646
+            ],
+            [
+              4.5,
+              14.86826
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              4.5,
+              0.79646
+            ],
+            [
+              7.11961,
+              0.79646
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.4755,
+              0.1358
+            ],
+            [
+              7.4755,
+              0.23903
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.42007,
+              0.23903
+            ],
+            [
+              7.53094,
+              0.23903
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.28596,
+              0.1358
+            ],
+            [
+              7.28596,
+              0.30114
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.26413,
+              0.234
+            ],
+            [
+              7.3162,
+              0.234
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              7.11961,
+              0.1358
+            ],
+            [
+              7.11961,
+              0.79756
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.68839,
+              14.99611
+            ],
+            [
+              0.68875,
+              14.86826
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.68875,
+              14.86826
+            ],
+            [
+              4.5,
+              14.86826
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              4.5,
+              14.86826
+            ],
+            [
+              6.17151,
+              14.61424
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.9,
+              12.185
+            ],
+            [
+              2.9,
+              10.885
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              0.3,
+              12.17828
+            ],
+            [
+              4.7762,
+              12.17828
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              4.7762,
+              -0.41668
+            ],
+            [
+              4.7762,
+              12.17828
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              4.7762,
+              12.17828
+            ],
+            [
+              4.7762,
+              14.61992
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              4.7762,
+              14.61992
+            ],
+            [
+              7.40228,
+              14.61992
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              4.66846,
+              12.22275
+            ],
+            [
+              4.72424,
+              12.13475
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              4.72483,
+              12.22275
+            ],
+            [
+              4.66905,
+              12.13475
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.23567,
+              14.80344
+            ],
+            [
+              5.2328,
+              14.61992
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.2328,
+              14.80341
+            ],
+            [
+              5.48359,
+              14.80548
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.39617,
+              14.80509
+            ],
+            [
+              5.39617,
+              14.75305
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.46928,
+              14.75305
+            ],
+            [
+              5.32305,
+              14.75305
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.10921,
+              14.66439
+            ],
+            [
+              5.16499,
+              14.57639
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.16558,
+              14.66439
+            ],
+            [
+              5.1098,
+              14.57639
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.33299,
+              14.66392
+            ],
+            [
+              5.38877,
+              14.57592
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.38936,
+              14.66392
+            ],
+            [
+              5.33358,
+              14.57592
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        },
+        {
+          "kind": "gas",
+          "points": [
+            [
+              5.48359,
+              14.80548
+            ],
+            [
+              5.48359,
+              14.99902
+            ]
+          ],
+          "sourceLayer": "Gas",
+          "heightKnown": false
+        }
+      ]
+    },
+    "pa": {
+      "routes": [
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53969,
+              14.95039
+            ],
+            [
+              5.53969,
+              12.79221
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.50469,
+              4.3566
+            ],
+            [
+              0.49663,
+              4.3566
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.49663,
+              4.3566
+            ],
+            [
+              0.49663,
+              2.4796
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.49663,
+              2.4796
+            ],
+            [
+              3.82088,
+              2.4796
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              3.82088,
+              2.4796
+            ],
+            [
+              3.82088,
+              0.59542
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              3.85588,
+              0.56042
+            ],
+            [
+              4.99302,
+              0.56042
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.43438,
+              10.50612
+            ],
+            [
+              5.43438,
+              4.53207
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.46944,
+              13.82051
+            ],
+            [
+              5.79109,
+              13.81991
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.68315,
+              4.43796
+            ],
+            [
+              0.48636,
+              4.43336
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.45139,
+              4.39836
+            ],
+            [
+              0.45139,
+              2.33184
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.45139,
+              2.33184
+            ],
+            [
+              3.7579,
+              2.33184
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              3.7579,
+              2.33184
+            ],
+            [
+              3.7579,
+              0.55389
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              3.7929,
+              0.51889
+            ],
+            [
+              4.94268,
+              0.51889
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.96208,
+              0.51363
+            ],
+            [
+              5.43647,
+              0.23059
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.45137,
+              10.66067
+            ],
+            [
+              0.45137,
+              12.77654
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.48637,
+              12.81154
+            ],
+            [
+              5.39938,
+              12.81154
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.48637,
+              10.54112
+            ],
+            [
+              5.39938,
+              10.54112
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.43438,
+              13.78551
+            ],
+            [
+              5.43438,
+              12.84654
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.46944,
+              13.82051
+            ],
+            [
+              5.46257,
+              13.81985
+            ],
+            [
+              5.45603,
+              13.81787
+            ],
+            [
+              5.44999,
+              13.81466
+            ],
+            [
+              5.44465,
+              13.81029
+            ],
+            [
+              5.44027,
+              13.80495
+            ],
+            [
+              5.43705,
+              13.79892
+            ],
+            [
+              5.43506,
+              13.79238
+            ],
+            [
+              5.43438,
+              13.78551
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.48637,
+              12.81154
+            ],
+            [
+              0.47274,
+              12.80879
+            ],
+            [
+              0.46162,
+              12.80129
+            ],
+            [
+              0.45412,
+              12.79017
+            ],
+            [
+              0.45137,
+              12.77654
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.39938,
+              12.81154
+            ],
+            [
+              5.413,
+              12.81429
+            ],
+            [
+              5.42412,
+              12.82179
+            ],
+            [
+              5.43163,
+              12.83292
+            ],
+            [
+              5.43438,
+              12.84654
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.45137,
+              10.57612
+            ],
+            [
+              0.45412,
+              10.5625
+            ],
+            [
+              0.46162,
+              10.55137
+            ],
+            [
+              0.47274,
+              10.54387
+            ],
+            [
+              0.48637,
+              10.54112
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              1.02093,
+              12.75721
+            ],
+            [
+              5.50471,
+              12.75721
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.49663,
+              10.67703
+            ],
+            [
+              0.49663,
+              12.61301
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.53163,
+              10.64203
+            ],
+            [
+              5.50469,
+              10.64203
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53969,
+              10.60703
+            ],
+            [
+              5.53969,
+              4.3916
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53969,
+              10.60703
+            ],
+            [
+              5.53694,
+              10.62065
+            ],
+            [
+              5.52944,
+              10.63178
+            ],
+            [
+              5.51832,
+              10.63928
+            ],
+            [
+              5.50469,
+              10.64203
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.49663,
+              10.67703
+            ],
+            [
+              0.49938,
+              10.6634
+            ],
+            [
+              0.50688,
+              10.65228
+            ],
+            [
+              0.518,
+              10.64478
+            ],
+            [
+              0.53163,
+              10.64203
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.49663,
+              12.61301
+            ],
+            [
+              0.49663,
+              12.72195
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.53005,
+              12.75695
+            ],
+            [
+              0.98226,
+              12.75721
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.53005,
+              12.75695
+            ],
+            [
+              0.51704,
+              12.75419
+            ],
+            [
+              0.50641,
+              12.74669
+            ],
+            [
+              0.49925,
+              12.73557
+            ],
+            [
+              0.49663,
+              12.72195
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.50471,
+              12.75721
+            ],
+            [
+              5.51833,
+              12.75996
+            ],
+            [
+              5.52945,
+              12.76746
+            ],
+            [
+              5.53694,
+              12.77858
+            ],
+            [
+              5.53969,
+              12.79221
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.07552,
+              1.96929
+            ],
+            [
+              5.03685,
+              1.96929
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.06365,
+              2.00052
+            ],
+            [
+              5.11549,
+              2.06959
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.94699,
+              1.96929
+            ],
+            [
+              4.98566,
+              1.96929
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.95886,
+              2.00052
+            ],
+            [
+              4.90702,
+              2.06959
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.07552,
+              1.86558
+            ],
+            [
+              5.03685,
+              1.86558
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.06365,
+              1.83434
+            ],
+            [
+              5.11549,
+              1.76528
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.94699,
+              1.86558
+            ],
+            [
+              4.98566,
+              1.86558
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.95886,
+              1.83434
+            ],
+            [
+              4.90702,
+              1.76528
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.6942,
+              1.86986
+            ],
+            [
+              4.6942,
+              1.90854
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.72543,
+              1.88173
+            ],
+            [
+              4.7945,
+              1.82989
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.6942,
+              1.99839
+            ],
+            [
+              4.6942,
+              1.95972
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.72543,
+              1.98652
+            ],
+            [
+              4.7945,
+              2.03836
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.59048,
+              1.86986
+            ],
+            [
+              4.59048,
+              1.90854
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.55925,
+              1.88173
+            ],
+            [
+              4.49018,
+              1.82989
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.59048,
+              1.99839
+            ],
+            [
+              4.59048,
+              1.95972
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.55925,
+              1.98652
+            ],
+            [
+              4.49018,
+              2.03836
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.07552,
+              2.44842
+            ],
+            [
+              5.03685,
+              2.44842
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.06365,
+              2.47966
+            ],
+            [
+              5.11549,
+              2.54872
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.94699,
+              2.44842
+            ],
+            [
+              4.98566,
+              2.44842
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.95886,
+              2.47966
+            ],
+            [
+              4.90702,
+              2.54872
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.07552,
+              2.34471
+            ],
+            [
+              5.03685,
+              2.34471
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.06365,
+              2.31348
+            ],
+            [
+              5.11549,
+              2.24441
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.94699,
+              2.34471
+            ],
+            [
+              4.98566,
+              2.34471
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.95886,
+              2.31348
+            ],
+            [
+              4.90702,
+              2.24441
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.6942,
+              2.349
+            ],
+            [
+              4.6942,
+              2.38767
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.72543,
+              2.36087
+            ],
+            [
+              4.7945,
+              2.30902
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.6942,
+              2.47753
+            ],
+            [
+              4.6942,
+              2.43885
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.72543,
+              2.46566
+            ],
+            [
+              4.7945,
+              2.5175
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.59048,
+              2.349
+            ],
+            [
+              4.59048,
+              2.38767
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.55925,
+              2.36087
+            ],
+            [
+              4.49018,
+              2.30902
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.59048,
+              2.47753
+            ],
+            [
+              4.59048,
+              2.43885
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.55925,
+              2.46566
+            ],
+            [
+              4.49018,
+              2.5175
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.42974,
+              6.8904
+            ],
+            [
+              5.42924,
+              6.85173
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.46113,
+              6.87762
+            ],
+            [
+              5.68191,
+              7.04338
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53285,
+              7.18107
+            ],
+            [
+              5.53335,
+              7.21974
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.56474,
+              7.19332
+            ],
+            [
+              5.73715,
+              7.06041
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.42854,
+              8.67014
+            ],
+            [
+              5.42804,
+              8.63147
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.45992,
+              8.65736
+            ],
+            [
+              5.6807,
+              8.82312
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53165,
+              8.96081
+            ],
+            [
+              5.53215,
+              8.99947
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.56354,
+              8.97306
+            ],
+            [
+              5.73594,
+              8.84014
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53437,
+              4.57247
+            ],
+            [
+              5.53487,
+              4.61113
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.56626,
+              4.58472
+            ],
+            [
+              5.73867,
+              4.4518
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.50469,
+              4.3566
+            ],
+            [
+              5.51155,
+              4.35728
+            ],
+            [
+              5.51809,
+              4.35926
+            ],
+            [
+              5.52411,
+              4.36248
+            ],
+            [
+              5.52944,
+              4.36685
+            ],
+            [
+              5.53381,
+              4.37218
+            ],
+            [
+              5.53703,
+              4.37821
+            ],
+            [
+              5.53901,
+              4.38474
+            ],
+            [
+              5.53969,
+              4.3916
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.3927,
+              4.43136
+            ],
+            [
+              5.35403,
+              4.43136
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.38083,
+              4.46259
+            ],
+            [
+              5.43438,
+              4.53207
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              2.31311,
+              4.44452
+            ],
+            [
+              2.27444,
+              4.44452
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              2.30124,
+              4.41329
+            ],
+            [
+              2.37344,
+              4.31711
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              2.44941,
+              4.36294
+            ],
+            [
+              2.48808,
+              4.36294
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.56615,
+              0.52523
+            ],
+            [
+              4.60482,
+              0.52523
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              4.59696,
+              0.51889
+            ],
+            [
+              4.49159,
+              0.37852
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.39479,
+              0.56676
+            ],
+            [
+              4.35612,
+              0.56676
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              4.38292,
+              0.53553
+            ],
+            [
+              4.46578,
+              0.42515
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.4574,
+              2.38984
+            ],
+            [
+              0.4574,
+              2.35117
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.42617,
+              2.37797
+            ],
+            [
+              0.39164,
+              2.40389
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.50208,
+              2.7247
+            ],
+            [
+              0.50208,
+              2.76337
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.4709,
+              2.73649
+            ],
+            [
+              0.39183,
+              2.67594
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.53335,
+              13.92015
+            ],
+            [
+              5.53335,
+              13.95882
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.56458,
+              13.93202
+            ],
+            [
+              5.74358,
+              13.79766
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              1.10621,
+              12.73225
+            ],
+            [
+              1.00704,
+              12.60014
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              1.09434,
+              12.76348
+            ],
+            [
+              1.13301,
+              12.76348
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.50193,
+              10.76012
+            ],
+            [
+              0.50193,
+              10.79879
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              0.47069,
+              10.77199
+            ],
+            [
+              0.39008,
+              10.71147
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.91065,
+              12.81788
+            ],
+            [
+              0.87198,
+              12.81788
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.89878,
+              12.78665
+            ],
+            [
+              1.05719,
+              12.57561
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.4577,
+              10.61479
+            ],
+            [
+              0.4577,
+              10.57612
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              5.43438,
+              10.50612
+            ],
+            [
+              5.43163,
+              10.51974
+            ],
+            [
+              5.42412,
+              10.53087
+            ],
+            [
+              5.413,
+              10.53837
+            ],
+            [
+              5.39938,
+              10.54112
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              0.48636,
+              4.43336
+            ],
+            [
+              0.47275,
+              4.4306
+            ],
+            [
+              0.46164,
+              4.4231
+            ],
+            [
+              0.45414,
+              4.41198
+            ],
+            [
+              0.45139,
+              4.39836
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              3.82088,
+              0.59542
+            ],
+            [
+              3.82363,
+              0.5818
+            ],
+            [
+              3.83113,
+              0.57068
+            ],
+            [
+              3.84226,
+              0.56317
+            ],
+            [
+              3.85588,
+              0.56042
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "return",
+          "points": [
+            [
+              3.7579,
+              0.55389
+            ],
+            [
+              3.76065,
+              0.54026
+            ],
+            [
+              3.76815,
+              0.52914
+            ],
+            [
+              3.77928,
+              0.52164
+            ],
+            [
+              3.7929,
+              0.51889
+            ]
+          ],
+          "sourceLayer": "Radiadores cañería de Retorno",
+          "heightKnown": false
+        },
+        {
+          "kind": "supply",
+          "points": [
+            [
+              5.01332,
+              0.55453
+            ],
+            [
+              5.51441,
+              0.22743
+            ]
+          ],
+          "sourceLayer": "Radiadores  cañería Alimentación",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.74575,
+              15.00614
+            ],
+            [
+              0.74575,
+              15.07791
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.75727,
+              15.08795
+            ],
+            [
+              2.02361,
+              15.08795
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.02361,
+              15.08795
+            ],
+            [
+              2.02361,
+              14.96005
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.99071,
+              14.87099
+            ],
+            [
+              2.06474,
+              14.87099
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.02361,
+              14.94753
+            ],
+            [
+              2.02361,
+              14.87099
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.02987,
+              14.95374
+            ],
+            [
+              2.33489,
+              14.95374
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.33489,
+              14.97941
+            ],
+            [
+              2.33489,
+              13.6663
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.26243,
+              13.6063
+            ],
+            [
+              2.33489,
+              13.6063
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.21612,
+              14.66793
+            ],
+            [
+              0.45861,
+              14.66905
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.21612,
+              14.66793
+            ],
+            [
+              0.21612,
+              12.96395
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.21612,
+              14.02649
+            ],
+            [
+              0.36463,
+              14.02791
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.72331,
+              15.00839
+            ],
+            [
+              1.91219,
+              15.00839
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.91219,
+              15.00839
+            ],
+            [
+              1.91219,
+              14.97164
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.88102,
+              14.88606
+            ],
+            [
+              1.94336,
+              14.88606
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.91219,
+              14.95912
+            ],
+            [
+              1.91219,
+              14.88606
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.91829,
+              14.96676
+            ],
+            [
+              2.38106,
+              14.96676
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              2.38106,
+              14.96676
+            ],
+            [
+              2.38106,
+              14.57008
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              2.38106,
+              14.57008
+            ],
+            [
+              2.38193,
+              13.8181
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              2.38106,
+              13.81809
+            ],
+            [
+              2.25861,
+              13.81632
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.33489,
+              14.15166
+            ],
+            [
+              0.21612,
+              14.15166
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              2.25861,
+              13.83683
+            ],
+            [
+              0.25016,
+              13.83683
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.25016,
+              13.87632
+            ],
+            [
+              0.25016,
+              13.81633
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.25053,
+              13.83683
+            ],
+            [
+              0.36363,
+              13.83711
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.25016,
+              13.87632
+            ],
+            [
+              0.25016,
+              14.50974
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.25016,
+              14.50974
+            ],
+            [
+              0.4561,
+              14.50974
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.48,
+              1.3922
+            ],
+            [
+              0.56754,
+              1.14163
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.40365,
+              3.15991
+            ],
+            [
+              0.40307,
+              1.10007
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.40307,
+              1.10007
+            ],
+            [
+              0.52163,
+              1.08984
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              2.30644,
+              1.74303
+            ],
+            [
+              0.63166,
+              1.11004
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.58567,
+              1.0272
+            ],
+            [
+              0.58085,
+              0.83257
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.62392,
+              0.92669
+            ],
+            [
+              1.78321,
+              0.24126
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.27198,
+              0.36727
+            ],
+            [
+              0.32256,
+              0.36727
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.64348,
+              0.35886
+            ],
+            [
+              2.57536,
+              0.35886
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              2.57536,
+              0.35886
+            ],
+            [
+              2.57536,
+              1.83622
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              2.57536,
+              1.83622
+            ],
+            [
+              2.23288,
+              1.83622
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              1.64348,
+              0.35886
+            ],
+            [
+              0.32256,
+              0.35886
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.32256,
+              0.35886
+            ],
+            [
+              0.32256,
+              0.68745
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.3,
+              0.70785
+            ],
+            [
+              0.23447,
+              0.70785
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.23447,
+              0.70785
+            ],
+            [
+              0.23447,
+              2.79615
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.23447,
+              2.79615
+            ],
+            [
+              0.47278,
+              2.79615
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.77955,
+              14.99623
+            ],
+            [
+              0.77955,
+              14.94923
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.41797,
+              14.94897
+            ],
+            [
+              0.77955,
+              14.9489
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.41797,
+              14.94923
+            ],
+            [
+              0.41506,
+              0.43004
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.2687,
+              0.34761
+            ],
+            [
+              0.41694,
+              0.34761
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "drain",
+          "points": [
+            [
+              0.41694,
+              0.39002
+            ],
+            [
+              0.41694,
+              0.31146
+            ]
+          ],
+          "sourceLayer": "Cloacas",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.28076,
+              0.45307
+            ],
+            [
+              0.429,
+              0.45307
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.429,
+              0.49235
+            ],
+            [
+              0.429,
+              0.41379
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.67318,
+              0.33906
+            ],
+            [
+              1.77718,
+              0.33906
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.77718,
+              0.33906
+            ],
+            [
+              2.60507,
+              0.33906
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              1.67318,
+              0.33906
+            ],
+            [
+              0.35226,
+              0.33906
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.32272,
+              0.99788
+            ],
+            [
+              0.26117,
+              0.99437
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.26117,
+              0.99437
+            ],
+            [
+              0.24832,
+              1.63838
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.24832,
+              1.48838
+            ],
+            [
+              0.38025,
+              1.48458
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.24832,
+              1.63838
+            ],
+            [
+              0.24832,
+              2.96314
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.24832,
+              2.96314
+            ],
+            [
+              0.44203,
+              2.96314
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "hot",
+          "points": [
+            [
+              0.25215,
+              1.29818
+            ],
+            [
+              0.49046,
+              1.29818
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua caliente",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.25518,
+              1.63838
+            ],
+            [
+              2.60502,
+              1.63458
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              2.60502,
+              0.35991
+            ],
+            [
+              2.60502,
+              1.63406
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.21612,
+              12.96395
+            ],
+            [
+              0.36463,
+              12.96537
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.30032,
+              0.45186
+            ],
+            [
+              0.41506,
+              0.4499
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.35226,
+              0.33906
+            ],
+            [
+              0.34344,
+              0.97632
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.26117,
+              0.99437
+            ],
+            [
+              0.26117,
+              0.72627
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        },
+        {
+          "kind": "cold",
+          "points": [
+            [
+              0.26117,
+              0.72627
+            ],
+            [
+              0.37516,
+              0.72627
+            ]
+          ],
+          "sourceLayer": "Sanitarios agua fría",
+          "heightKnown": false
+        }
+      ]
+    }
+  }
+}

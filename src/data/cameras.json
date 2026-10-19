@@ -1,0 +1,58 @@
+[
+  {
+    "id": "CAM-JARDIN-1",
+    "name": "Cámara jardín 1",
+    "zone": "Pared este · junto a la ventana, hacia el jardín",
+    "x": 5.97,
+    "y": 2.35,
+    "z": 5.9,
+    "source": "reference/camaras_puerta_jardin.jpg",
+    "aim": [
+      0.7,
+      -0.25,
+      -0.7
+    ]
+  },
+  {
+    "id": "CAM-JARDIN-2",
+    "name": "Cámara jardín 2",
+    "zone": "Pared este · junto a la ventana, hacia el jardín",
+    "x": 5.97,
+    "y": 2.4,
+    "z": 6.15,
+    "source": "reference/camaras_puerta_jardin.jpg",
+    "aim": [
+      0.7,
+      -0.25,
+      0.7
+    ]
+  },
+  {
+    "id": "CAM-CALLE-1",
+    "name": "Cámara calle 1",
+    "zone": "Frente · pared de la casa junto a la puerta peatonal",
+    "x": 5.5,
+    "y": 3.33,
+    "z": -0.03,
+    "source": "reference/camaras_porton_auto.jpg",
+    "aim": [
+      -0.7,
+      -0.2,
+      -0.7
+    ]
+  },
+  {
+    "id": "CAM-CALLE-2",
+    "name": "Cámara calle 2",
+    "zone": "Frente · pared de la casa junto a la puerta peatonal",
+    "x": 5.42,
+    "y": 2.85,
+    "z": -0.03,
+    "source": "reference/camaras_porton_auto.jpg",
+    "aim": [
+      0.7,
+      -0.25,
+      -0.7
+    ]
+  }
+]

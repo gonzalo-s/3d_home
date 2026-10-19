@@ -1,0 +1,13 @@
+{
+  "12": {
+    "meanDifference": 0.0,
+    "maximumDifference": 0,
+    "changedPixels": 0
+  },
+  "21": {
+    "meanDifference": 0.0,
+    "maximumDifference": 0,
+    "changedPixels": 0
+  },
+  "modelStatesEqual": true
+}
