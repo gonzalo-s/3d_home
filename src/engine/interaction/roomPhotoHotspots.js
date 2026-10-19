@@ -1,9 +1,8 @@
 import { In, Lo, Ni, go, nA } from '../../legacy/three-runtime.js';
 
 const MARKER_HEIGHT = 1.35;
-const MARKER_SIZE = 0.032;
-const HOVER_SCALE = 1.3;
-const HIDE_DELAY_MS = 120;
+const MARKER_SIZE = 0.022;
+const HOVER_SCALE = 1.15;
 const TAP_TOLERANCE_PX = 8;
 
 function createMarkerTexture() {
@@ -29,7 +28,7 @@ function isVisibleInScene(object) {
   return true;
 }
 
-export function createRoomPhotoHotspots({ anchors, camera, domElement, panel, getLevelsRoot, listen, openPhoto }) {
+export function createRoomPhotoHotspots({ anchors, camera, domElement, getLevelsRoot, listen, openPhoto }) {
   const raycaster = new In();
   const pointer = new nA();
   const texture = createMarkerTexture();
@@ -59,8 +58,6 @@ export function createRoomPhotoHotspots({ anchors, camera, domElement, panel, ge
   });
 
   let hovered = null;
-  let hoverOpened = false;
-  let hideTimer = 0;
   let tapStart = null;
 
   function pick(event) {
@@ -82,66 +79,40 @@ export function createRoomPhotoHotspots({ anchors, camera, domElement, panel, ge
     domElement.style.cursor = marker ? 'pointer' : '';
   }
 
-  function cancelHide() {
-    clearTimeout(hideTimer);
-  }
-
-  function scheduleHide() {
-    cancelHide();
-    if (!hoverOpened) return;
-    hideTimer = setTimeout(() => {
-      panel.hidden = true;
-      hoverOpened = false;
-    }, HIDE_DELAY_MS);
-  }
-
   function open(marker) {
     openPhoto(marker.userData.anchor);
   }
 
   listen(domElement, 'pointermove', (event) => {
+    if (tapStart?.pointerId === event.pointerId && Math.hypot(event.clientX - tapStart.x, event.clientY - tapStart.y) >= TAP_TOLERANCE_PX) tapStart = null;
     if (event.pointerType !== 'mouse' || event.buttons !== 0) return;
-    const marker = pick(event);
-    setHovered(marker);
-    if (!marker) {
-      scheduleHide();
-      return;
-    }
-    cancelHide();
-    if (!hoverOpened || marker !== hovered || panel.hidden) {
-      open(marker);
-      hoverOpened = true;
-    }
+    setHovered(pick(event));
   });
   listen(domElement, 'pointerleave', () => {
     setHovered(null);
-    scheduleHide();
+    tapStart = null;
   });
   listen(domElement, 'pointerdown', (event) => {
-    tapStart = event.pointerType !== 'mouse' ? { x: event.clientX, y: event.clientY } : null;
+    tapStart = event.isPrimary && event.button === 0
+      ? { x: event.clientX, y: event.clientY, pointerId: event.pointerId, marker: pick(event) }
+      : null;
   });
   listen(domElement, 'pointerup', (event) => {
-    if (!tapStart || Math.hypot(event.clientX - tapStart.x, event.clientY - tapStart.y) >= TAP_TOLERANCE_PX) {
+    if (!tapStart || tapStart.pointerId !== event.pointerId || Math.hypot(event.clientX - tapStart.x, event.clientY - tapStart.y) >= TAP_TOLERANCE_PX) {
       tapStart = null;
       return;
     }
+    const startMarker = tapStart.marker;
     tapStart = null;
     const marker = pick(event);
-    if (!marker) return;
+    if (!marker || marker !== startMarker) return;
     open(marker);
-    hoverOpened = false;
   });
-  listen(panel, 'pointerenter', cancelHide);
-  listen(panel, 'pointerleave', scheduleHide);
+  listen(domElement, 'pointercancel', () => { tapStart = null; });
 
   return {
-    pin() {
-      cancelHide();
-      hoverOpened = false;
-    },
     dispose() {
       abort.abort();
-      cancelHide();
       domElement.style.cursor = '';
     },
   };

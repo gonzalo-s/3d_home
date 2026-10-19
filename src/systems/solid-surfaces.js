@@ -29,11 +29,15 @@ export function installSolidSurfaces(model) {
       const edge = finish.clone();
       edge.color.setHex(surface.userData.patioFloor ? 0xb77150 : 0xd0d0c9);
       edge.map = null;
+      // Match the vertical upper slab to the façade; keep the top and underside finishes.
+      const sideFinish = id === 'pa' ? model.materials.facade.clone() : edge;
+      const surfaceMaterials = id === 'pa' ? [finish, edge, sideFinish] : [finish, edge];
       geometry.clearGroups();
       const normals = geometry.attributes.normal;
-      let start = 0, current = normals.getY(0) > 0.5 ? 0 : 1;
+      const materialAt = (i) => normals.getY(i) > 0.5 ? 0 : id === 'pa' && Math.abs(normals.getY(i)) < 0.5 ? 2 : 1;
+      let start = 0, current = materialAt(0);
       for (let i = 3; i <= position.count; i += 3) {
-        const material = i < position.count && normals.getY(i) > 0.5 ? 0 : 1;
+        const material = i < position.count ? materialAt(i) : -1;
         if (i === position.count || material !== current) {
           geometry.addGroup(start, i - start, current);
           start = i;
@@ -41,7 +45,7 @@ export function installSolidSurfaces(model) {
         }
       }
       surface.geometry = geometry;
-      surface.material = [finish, edge];
+      surface.material = surfaceMaterials;
       surface.castShadow = true;
       surface.receiveShadow = true;
       surface.renderOrder = 0;

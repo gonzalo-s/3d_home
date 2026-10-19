@@ -989,7 +989,7 @@ function c0(o) {
 }
 FA("#closePhoto").onclick = () => FA("#reference").hidden = true;
 FA("#room").onchange = (o) => {
-  roomPhotoHotspots.pin(), o.target.value !== "" && c0(+o.target.value);
+  o.target.value !== "" && c0(+o.target.value);
 };
 [...ia.map((o) => o[0]), "Cocina \xB7 PB", "Comedor \xB7 PB", "Living \xB7 PB", "Jard\xEDn desde cuarto del fondo", "Ba\xF1o PB / Escalera"].forEach((o, A) => {
   let e = document.createElement("option");
@@ -1092,7 +1092,7 @@ var roomPhotoHotspots = createRoomPhotoHotspots({
     }),
     ...wardrobeAnchors.map((anchor) => ({ ...anchor, imageUrl: referenceImageUrl(anchor.reference) }))
   ],
-  camera: Xt, domElement: be.domElement, panel: FA("#reference"), getLevelsRoot: () => lt, listen,
+  camera: Xt, domElement: be.domElement, getLevelsRoot: () => lt, listen,
   openPhoto: (anchor) => anchor.reference ? Yt(anchor.reference) : c0(anchor.room)
 });
 disposers.push(() => roomPhotoHotspots.dispose());
@@ -1134,7 +1134,7 @@ const model = { scene: gt, camera: Xt, renderer: be, get levels() {
   Cr = {};
   for (const id of ["pb", "pa"]) Tw(mt[id], id);
   p0();
-}, geometryConstructors: { extrude: Nn, box: yt, cylinder: mi }, ceilingAt: Qo, stairSpec: ae, data: Hr };
+}, materials: y, geometryConstructors: { extrude: Nn, box: yt, cylinder: mi }, ceilingAt: Qo, stairSpec: ae, data: Hr };
 
 function dispose() {
   cancelAnimationFrame(frame);

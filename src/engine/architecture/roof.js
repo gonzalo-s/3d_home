@@ -2,7 +2,18 @@ import { Lt, Nn, YA, he, ne, te, vo, xe } from '../../legacy/three-runtime.js';
 import { PARAPET_TOP, ROOF, SKYLIGHTS, roofHeightAt } from './roofProfile.js';
 
 const SHEET = { x0: 0.05, x1: 6.15, z0: 0.3, z1: 15.27, lift: 0.03, amplitude: 0.025, period: 0.14, samplesPerPeriod: 6 };
-const CEILING = { thickness: 0.02, footprint: [[0, 0], [5.95, 0], [5.95, 9.265], [6.0925, 15.22], [0, 15.22]] };
+// Rendering clearance inside the exterior walls, independent of the CAD footprint.
+const CEILING_PERIMETER_INSET = 0.02;
+const CEILING = {
+  thickness: 0.02,
+  footprint: [
+    [CEILING_PERIMETER_INSET, CEILING_PERIMETER_INSET],
+    [5.95 - CEILING_PERIMETER_INSET, CEILING_PERIMETER_INSET],
+    [5.95 - CEILING_PERIMETER_INSET, 9.265],
+    [6.0925 - CEILING_PERIMETER_INSET, 15.22 - CEILING_PERIMETER_INSET],
+    [CEILING_PERIMETER_INSET, 15.22 - CEILING_PERIMETER_INSET],
+  ],
+};
 const BORDER = { color: 0xf1eee5, curbHeight: 0.2, curbThickness: 0.045, ringHeight: 0.03, ringThickness: 0.03 };
 const SKYLIGHT_ROOF_LIFT = 0.05;
 
@@ -66,6 +77,19 @@ function createCeilingGeometry() {
     position.setXYZ(i, position.getX(i), ROOF.ceilingHeight + position.getZ(i), position.getY(i));
   }
   geometry.computeVertexNormals();
+  // Keep both horizontal drywall faces white; finish vertical edges like the façade.
+  geometry.clearGroups();
+  const normals = geometry.attributes.normal;
+  let start = 0;
+  let current = Math.abs(normals.getY(0)) < 0.5 ? 1 : 0;
+  for (let i = 3; i <= position.count; i += 3) {
+    const material = i < position.count ? (Math.abs(normals.getY(i)) < 0.5 ? 1 : 0) : -1;
+    if (material !== current) {
+      geometry.addGroup(start, i - start, current);
+      start = i;
+      current = material;
+    }
+  }
   return geometry;
 }
 
@@ -73,6 +97,7 @@ export function createRoofBuilder(y, Y, exteriorWalls) {
   const sheetMaterial = new xe({ color: 0x9aa1a6, roughness: 0.55, metalness: 0.1, side: 2 });
   const panelMaterial = new xe({ color: 0xcfe3ee, roughness: 0.25, transparent: true, opacity: 0.3, side: 2, depthWrite: false });
   const ceilingMaterial = new xe({ color: 0xf4f2ee, roughness: 0.9, side: 2 });
+  const ceilingEdgeMaterial = y.facade.clone();
   const borderMaterial = new xe({ color: BORDER.color, roughness: 0.8 });
   const shaftMaterial = new xe({ color: 0xe9e7e1, roughness: 1 });
 
@@ -99,7 +124,7 @@ export function createRoofBuilder(y, Y, exteriorWalls) {
 
   function addCeilingLayer(level) {
     const layer = addLayer(level);
-    const ceiling = new ne(createCeilingGeometry(), ceilingMaterial);
+    const ceiling = new ne(createCeilingGeometry(), [ceilingMaterial, ceilingEdgeMaterial]);
     ceiling.receiveShadow = true;
     ceiling.userData.ceiling = true;
     layer.add(ceiling);

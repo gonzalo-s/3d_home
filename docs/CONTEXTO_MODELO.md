@@ -21,6 +21,10 @@
 
 ## Interfaz y comportamiento
 
+- Los iconos de cámara son más pequeños y abren referencias con clic o toque. Hover solo resalta el icono; el panel permanece abierto al retirar el cursor, hasta cerrarlo o elegir otra referencia. Arrastrar la vista no abre fotos.
+- Las caras verticales de la losa de PA usan el mismo material beige de fachada para evitar la franja gris exterior. Se conservan el acabado superior, la cara inferior, el espesor de 0,18 m y el hueco de escalera.
+- El cielorraso superior tiene una holgura gráfica de 0,02 m hacia dentro del perímetro exterior para evitar caras coplanares con la fachada. Sus cantos usan material de fachada; las caras horizontales conservan el blanco, la altura y el espesor originales, así como los tres huecos de claraboyas. No cambia la huella CAD ni el techo de chapa.
+
 - Living y jardín también tienen `Vista perspectiva` y `Planta 2D`, basadas en el modelo actual de PB. El living conserva los tres sofás alrededor de la mesa ratona y su continuidad abierta hacia el comedor. El jardín muestra solo la propiedad: césped, camino y patio terracota, arbustos, árbol, muros y portones; excluye casas vecinas, calle y cables exteriores. La planta indica la cubierta del patio con línea discontinua, sin tapar el piso. Capturas, prompts y límites en `docs/LIVING_GARDEN_REFERENCE_PROMPTS.json`. Las referencias originales sustituidas ya no se sirven desde `public/`.
 
 - Cada uno de los siete ambientes de PA con dibujo generado ofrece `Vista perspectiva` y `Planta 2D` en el mismo panel, también desde los iconos de cámara. Las plantas se basan en capturas ortográficas del modelo con un corte horizontal temporal a 1,15 m sobre PA para mostrar aberturas; no cambian la escena de la aplicación. Mapeo en `src/data/room-reference-views.json`; capturas y prompts en `docs/ROOM_PLAN_PROMPTS.json`. Son imágenes esquemáticas: acabados, grosor gráfico de muros y peldaños dibujados no constituyen cotas verificadas.
