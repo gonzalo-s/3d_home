@@ -110,5 +110,37 @@
         "image": "/assets/references/cad/cad-small-bathroom-plan.png"
       }
     ]
+  },
+  {
+    "id": "living-room",
+    "photoIndex": 11,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-living-room.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-living-room-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "garden",
+    "photoIndex": 12,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-garden.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-garden-plan.png"
+      }
+    ]
   }
 ]

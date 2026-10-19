@@ -10,7 +10,7 @@ assert.equal(assets.length,24,'La referencia v39 contiene 24 imágenes');
 for(const asset of assets)await access(path.join(root,'public',asset.path));
 const house=await readJSON('house.json');
 const roomReferences=await readJSON('room-reference-views.json');
-assert.equal(roomReferences.length,7,'Siete ambientes con perspectiva y planta');
+assert.equal(roomReferences.length,9,'Nueve ambientes con perspectiva y planta');
 assert.equal(new Set(roomReferences.map(room=>room.photoIndex)).size,roomReferences.length);
 for(const room of roomReferences){
   assert.deepEqual(room.views.map(view=>view.kind),['perspective','plan']);
@@ -25,4 +25,4 @@ assert.equal(snapshot.installedLights.length,40,'La referencia v39 contiene 40 l
 assert.equal(new Set(snapshot.installedLights.map(p=>p.id)).size,40,'IDs duplicados en luminarias');
 assert(snapshot.electrical.floors.pb.points.some(p=>p.id==='PB-L01'&&p.kind==='light'));
 assert(snapshot.electrical.floors.pb.points.some(p=>p.id==='PB-76'&&p.kind==='middle'));
-console.log('Datos v39: 24 referencias, 7 plantas CAD, 40 luminarias y nodos eléctricos sin IDs duplicados.');
+console.log(`Datos v39: 24 referencias, ${roomReferences.length} plantas CAD, 40 luminarias y nodos eléctricos sin IDs duplicados.`);

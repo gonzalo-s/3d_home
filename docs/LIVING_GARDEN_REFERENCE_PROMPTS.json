@@ -1,0 +1,43 @@
+{
+  "tool": "Built-in image_gen",
+  "basis": "Perspective and orthographic captures of the current ground-floor Three.js model. Living-room plan captured with a temporary 1.15m horizontal cut; garden overhead view hides the patio cover to show the tiled floor.",
+  "limitations": "Schematic AI-generated references without verified scale. Surface detail and line weights are illustrative. Neighbors, surrounding buildings and street context deliberately excluded. Engine geometry unchanged.",
+  "images": [
+    {
+      "id": "living-room",
+      "kind": "perspective",
+      "photoIndex": 11,
+      "prompt": "Create a clean CAD-style architectural perspective illustration of the living room. Image 1 is the authoritative camera and room/furniture layout captured from the CURRENT 3D model. Image 2 is the actual room photo, use ONLY for material/appearance details. Image 3 is ONLY rendering style reference. Preserve exactly the model's three-sofa layout: white sofa at LEFT, white sofa across FOREGROUND with back toward camera, dark sofa at RIGHT; wood rectangular coffee table BETWEEN them, TV on low wood cabinet against FAR wall with tall glass cabinet left of TV and narrow front window toward right. Keep the garden-side windows, radiators and white AC on LEFT wall. Clean grey floor tiles and off-white walls. Match crisp thin dark CAD outlines and restrained soft shading. Add plain white ceiling at existing wall height, no open-roof cutaway. Remove clutter, clothes, toys and cables. Natural level architectural perspective around 45-50mm lens, corrected verticals, no fisheye, no exaggerated foreground. No invented furniture, no labels, dimensions or text. Do not show neighboring houses or people through windows: use neutral soft daylight. One single landscape illustration.",
+      "correctionPrompt": "Edit this CAD-style living-room illustration with ONE correction: remove the brown-framed grey door on the far wall to the LEFT of the glass-front display cabinet. There is NO door there in the actual 3D model. Fill that exact door region with uninterrupted off-white wall matching its surroundings. Keep the ONE glass-front display cabinet immediately to the left of the TV console. Preserve all three sofas, coffee table, TV/console, display cabinet, windows, AC, radiators, floor, ceiling lights, natural camera perspective, framing and linework unchanged. Do not add any opening, furniture or decoration. No labels or text.",
+      "layoutReference": "docs/reference-layouts/living-room-perspective-3d.png",
+      "output": "public/assets/references/cad/cad-living-room.png"
+    },
+    {
+      "id": "living-room",
+      "kind": "plan",
+      "photoIndex": 11,
+      "prompt": "Draw a TRUE 2D orthographic CAD TOP VIEW of the living room, faithfully tracing image 1 which is a 1.15m horizontal section of the CURRENT 3D model. Image 2 is ONLY a linework/material style reference, use its lower plan panel style, never copy its office layout. Keep exactly THREE sofas: white vertical sofa at LEFT, dark vertical sofa at RIGHT, white horizontal sofa across LOWER CENTER, all around a small rectangular WOOD COFFEE TABLE at center. Low TV cabinet on TOP wall, tall glass cabinet TOP LEFT, small black speaker TOP RIGHT. Preserve left-wall window gaps and radiator footprints; small front window TOP near RIGHT. Grey large-format tile floor. IMPORTANT: living room is open toward dining circulation at BOTTOM, do NOT draw a full enclosing bottom wall or an entry door there. Keep wall segments and visible openings exactly as the model; no invented swing arcs or furniture. Thick dark-grey wall cuts, thin precise charcoal outlines, soft neutral flat material shading, white sheet margins. No perspective, no ceiling objects, no dimensions, labels, compass or titles. Single schematic model-based plan.",
+      "correctionPrompt": null,
+      "layoutReference": "docs/reference-layouts/living-room-plan-3d.png",
+      "output": "public/assets/references/cad/cad-living-room-plan.png"
+    },
+    {
+      "id": "garden",
+      "kind": "perspective",
+      "photoIndex": 12,
+      "prompt": "Create a clean CAD-style architectural garden perspective from the supplied references. Image 1 is the authoritative CURRENT 3D garden layout and elevated rear-to-front camera direction. Image 2 is the original garden photo, use ONLY our garden's natural colors and materials; completely REMOVE AND EXCLUDE EVERY neighboring house, brick building, apartment tower, external roofs, street, utility pole, overhead cable and off-property vegetation from image 2. Image 3 is ONLY thin-line CAD illustration style reference. Show only OUR enclosed property: central rectangular green lawn, continuous terracotta tiled path along RIGHT next to OUR house, hedge along LEFT boundary ending before front gate, modest small tree near the rear hedge end, covered patio across FOREGROUND, beige boundary walls, wide grey vehicle gate and narrow grey pedestrian gate in FAR front wall. Keep the model's patio coverage and path/lawn proportions. At RIGHT show ONLY our continuous exterior house facade with existing barred windows; do not reproduce the low-poly screenshot's open-roof cutaway or visible living-room interior. Frame tightly at boundary walls; beyond them use plain neutral pale sky/white, absolutely no neighbors/buildings/cables/people. Crisp precise charcoal outlines, softly shaded beige/terracotta/green materials, no photorealism, natural restrained perspective with no fisheye. No text or dimensions, no new furniture or landscaping. Single landscape illustration.",
+      "correctionPrompt": null,
+      "layoutReference": "docs/reference-layouts/garden-perspective-3d.png",
+      "output": "public/assets/references/cad/cad-garden.png"
+    },
+    {
+      "id": "garden",
+      "kind": "plan",
+      "photoIndex": 12,
+      "prompt": "Create a TRUE VERTICAL ORTHOGRAPHIC CAD TOP VIEW of ONLY our garden property, faithfully tracing image 1 from the actual CURRENT 3D model. Image 2 is ONLY linework/material style reference, specifically its lower floor-plan panel. Preserve the long narrow plot: FRONT boundary and vehicle/pedestrian gates at TOP; long central lawn occupying left/central area; straight terracotta tiled path along RIGHT beside OUR house edge; hedge row along LEFT boundary starting below TOP with CLEAR OPEN SPACE before gate; one small tree at hedge's LOWER end; full-width terracotta patio across BOTTOM starting exactly where lawn ends. Keep all positions and relative proportions unchanged. Show covered patio roof outline lightly dashed, with the tiled floor visible beneath, not an opaque roof. Own house is only a boundary/facade strip at RIGHT, no interior or adjacent rooms. EXCLUDE ALL neighboring properties, houses, apartment buildings, street, overhead cables, utility poles and off-property objects. Outside our plot use plain white margins. Thick charcoal boundary wall cuts, thin precise lines, muted green grass/plant symbols, unified terracotta grid, off-white background, schematic gate openings at TOP in model positions. No furniture, new tree, pool or extra garden structures. No perspective, labels, dimensions, compass, title or text. One single long garden floor plan centered on a white sheet.",
+      "correctionPrompt": "Edit ONLY the gates at the TOP boundary of this existing CAD garden plan. The wide vehicle gate must occupy about 55% of the total plot width, running roughly from 5% to 60% across the top edge measured from LEFT. The narrow pedestrian gate occupies roughly 76% to 94% across that same top edge. Show BOTH as simple CLOSED dark-grey gate lines/panels flush with the TOP wall, with openings in that wall at these positions. Remove ALL door leaves projecting outside the property and ALL swing arcs: the gate operating mechanism is not specified. Keep the garden plot, lawn, hedge row, small tree, path on RIGHT, patio at BOTTOM, dashed patio-cover outline and house-edge strip exactly unchanged. Keep no neighbors, no surrounding buildings, no street, no exterior details beyond the property; plain white margins. Preserve the same top-view CAD style, scale and framing. No text, labels or dimensions.",
+      "layoutReference": "docs/reference-layouts/garden-plan-3d.png",
+      "output": "public/assets/references/cad/cad-garden-plan.png"
+    }
+  ]
+}
