@@ -1,0 +1,114 @@
+[
+  {
+    "id": "rear-bedroom",
+    "photoIndex": 0,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-rear-bedroom.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-rear-bedroom-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "middle-bedroom",
+    "photoIndex": 3,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-middle-bedroom.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-middle-bedroom-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "master-bedroom",
+    "photoIndex": 6,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-master-bedroom.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-master-bedroom-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "master-bathroom",
+    "photoIndex": 7,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-master-bathroom.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-master-bathroom-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "dressing-room",
+    "photoIndex": 5,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-dressing-room.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-dressing-room-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "hallway",
+    "photoIndex": 2,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-hallway.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-hallway-plan.png"
+      }
+    ]
+  },
+  {
+    "id": "small-bathroom",
+    "photoIndex": 1,
+    "views": [
+      {
+        "kind": "perspective",
+        "label": "Vista perspectiva",
+        "image": "/assets/references/cad/cad-small-bathroom.png"
+      },
+      {
+        "kind": "plan",
+        "label": "Planta 2D",
+        "image": "/assets/references/cad/cad-small-bathroom-plan.png"
+      }
+    ]
+  }
+]

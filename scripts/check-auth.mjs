@@ -3,11 +3,16 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { once } from 'node:events';
 import { randomBytes } from 'node:crypto';
-import { readdir } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { encode } from 'next-auth/jwt';
 
 const port = Number(process.env.AUTH_TEST_PORT ?? 3128);
 const origin = `http://127.0.0.1:${port}`;
+const referenceAssets = JSON.parse(await readFile('src/data/asset-map.json', 'utf8'));
+const roomReferences = JSON.parse(await readFile('src/data/room-reference-views.json', 'utf8'));
+const planPaths = roomReferences.map((room) => room.views.find((view) => view.kind === 'plan').image);
+const firstImage = referenceAssets[0].path;
+const lastImage = referenceAssets.at(-1).path;
 const secret = randomBytes(32).toString('base64');
 const env = {
   ...process.env,
@@ -87,7 +92,7 @@ try {
   const files = await readdir('.next/static', { recursive: true });
   const chunks = files.filter((file) => file.endsWith('.js')).map((file) => `/_next/static/${file.replaceAll('\\', '/')}`);
   assert(chunks.length > 0);
-  const protectedPaths = ['/assets/references/reference-01.jpg', '/assets/references/reference-24.jpg', '/_next/image?url=%2Fassets%2Freferences%2Freference-01.jpg&w=640&q=75', ...chunks];
+  const protectedPaths = [firstImage, lastImage, ...planPaths, `/_next/image?url=${encodeURIComponent(firstImage)}&w=640&q=75`, ...chunks];
   for (const path of protectedPaths) {
     for (const value of denied) {
       const response = await fetch(origin + path, { redirect: 'manual', headers: { Cookie: value } });
@@ -103,7 +108,7 @@ try {
     }
   }
   // Confirm authenticated requests work, including after anonymous requests.
-  for (const path of ['/assets/references/reference-01.jpg', ...chunks]) {
+  for (const path of [...referenceAssets.map((asset) => asset.path), ...planPaths, ...chunks]) {
     const response = await fetch(origin + path, { headers: { Cookie: authorized } });
     assert.equal(response.status, 200, path);
     assert.match(response.headers.get('cache-control'), /private.*no-store/, path);
@@ -127,7 +132,7 @@ try {
 
 server = await start({ ALLOWED_GOOGLE_EMAILS: 'different@example.com' });
 try {
-  assert.equal((await fetch(`${origin}/assets/references/reference-01.jpg`, { headers: { Cookie: authorized } })).status, 401);
+  assert.equal((await fetch(origin + firstImage, { headers: { Cookie: authorized } })).status, 401);
   console.log('PASS: removing an email denies its existing session.');
 } finally {
   await stop(server);
@@ -136,7 +141,7 @@ try {
 server = await start({ ALLOWED_GOOGLE_EMAILS: '' });
 try {
   assert.equal((await fetch(origin, { redirect: 'manual' })).status, 503);
-  assert.equal((await fetch(`${origin}/assets/references/reference-01.jpg`, { headers: { Cookie: authorized } })).status, 503);
+  assert.equal((await fetch(origin + firstImage, { headers: { Cookie: authorized } })).status, 503);
   console.log('PASS: missing configuration fails closed.');
 } finally {
   await stop(server);

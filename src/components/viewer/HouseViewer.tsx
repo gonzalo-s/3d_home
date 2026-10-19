@@ -40,8 +40,8 @@ export function HouseViewer() {
             <button id="closePhoto">×</button>
             <p id="roomtitle"></p>
             <div className="buttons" id="refviews" style={{ marginBottom: '10px' }}></div>
-            <img id="photo" alt="Foto actual del ambiente" />
-            <p className="refnote">Foto suministrada por Gonza · referencia de la casa construida</p>
+            <img id="photo" alt="Referencia visual del ambiente" />
+            <p className="refnote">Referencia visual · casa construida</p>
           </div>
         </div>
       </main>

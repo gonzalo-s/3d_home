@@ -1,7 +1,7 @@
 export function ReferencePhotosSection() {
   return (
       <section>
-      <h2>Fotos de referencia · casa</h2>
+      <h2>Referencias visuales · casa</h2>
       <select id="room"><option value="">Elegir ambiente…</option></select>
       <h2>Precisión del modelo</h2>
       <details className="panel-info">

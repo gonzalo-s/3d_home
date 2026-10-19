@@ -21,6 +21,10 @@
 
 ## Interfaz y comportamiento
 
+- Cada uno de los siete ambientes con dibujo generado ofrece `Vista perspectiva` y `Planta 2D` en el mismo panel, también desde los iconos de cámara. Las plantas se basan en capturas ortográficas del modelo con un corte horizontal temporal a 1,15 m sobre PA para mostrar aberturas; no cambian la escena de la aplicación. Mapeo en `src/data/room-reference-views.json`; capturas y prompts en `docs/ROOM_PLAN_PROMPTS.json`. Son imágenes esquemáticas: acabados, grosor gráfico de muros y peldaños dibujados no constituyen cotas verificadas.
+
+- Las vistas generales de principal, baño principal, vestidor, pasillo, cuarto del fondo, cuarto del medio y baño chico usan dibujos de estilo CAD generados a partir de las fotos originales. Son referencias esquemáticas sin escala, no levantamientos medidos. Assets en `public/assets/references/cad/`; prompts en `docs/ROOM_REFERENCE_PROMPTS.json`. Esta sustitución visual no modifica la geometría del motor. Los JPG sustituidos ya no se sirven; la referencia HTML v39 conserva los originales. `docs/package-sha256.json` documenta el paquete original, no estos assets nuevos.
+
 - Botones independientes PB/PA; ambas plantas pueden verse juntas. Sin separación vertical ni ajuste de alturas.
 - Etiquetas ocultas por defecto, activadas por checkbox. Textos explicativos colapsados y detalles eléctricos al seleccionar.
 - Hover de paredes exteriores con transparencia; interacción táctil correspondiente.

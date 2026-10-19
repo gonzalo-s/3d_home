@@ -1,22 +1,22 @@
 [
   {
     "index": 1,
-    "path": "/assets/references/reference-01.jpg",
+    "path": "/assets/references/cad/cad-rear-bedroom.png",
     "sourcePath": "photos.0"
   },
   {
     "index": 2,
-    "path": "/assets/references/reference-02.jpg",
+    "path": "/assets/references/cad/cad-small-bathroom.png",
     "sourcePath": "photos.1"
   },
   {
     "index": 3,
-    "path": "/assets/references/reference-03.jpg",
+    "path": "/assets/references/cad/cad-hallway.png",
     "sourcePath": "photos.2"
   },
   {
     "index": 4,
-    "path": "/assets/references/reference-04.jpg",
+    "path": "/assets/references/cad/cad-middle-bedroom.png",
     "sourcePath": "photos.3"
   },
   {
@@ -26,17 +26,17 @@
   },
   {
     "index": 6,
-    "path": "/assets/references/reference-06.jpg",
+    "path": "/assets/references/cad/cad-dressing-room.png",
     "sourcePath": "photos.5"
   },
   {
     "index": 7,
-    "path": "/assets/references/reference-07.jpg",
+    "path": "/assets/references/cad/cad-master-bedroom.png",
     "sourcePath": "photos.6"
   },
   {
     "index": 8,
-    "path": "/assets/references/reference-08.jpg",
+    "path": "/assets/references/cad/cad-master-bathroom.png",
     "sourcePath": "photos.7"
   },
   {

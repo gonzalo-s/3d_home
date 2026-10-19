@@ -44,7 +44,7 @@ An absent secret, OAuth credentials or an empty allowlist blocks app access with
 2. Sign in with an allowed Google account. Verify PB, PA, both floors, day/night, wall hover, layers, electrical selection and reference photos. The viewer geometry and lighting code are unchanged by the auth work.
 3. Use **Cerrar sesión** in the header, confirm signout, and verify the site requires sign-in again.
 4. Sign in with an account outside the allowlist. It must show Access Denied and never load the viewer.
-5. In a private window, request `/assets/references/reference-01.jpg` directly and a viewer JS URL copied from the authenticated Network panel. Both must return 401. Repeat these checks after an authenticated user has visited them to verify CDN behavior.
+5. In a private window, request `/assets/references/cad/cad-rear-bedroom.png` directly and a viewer JS URL copied from the authenticated Network panel. Both must return 401. Repeat these checks after an authenticated user has visited them to verify CDN behavior.
 6. Remove one address from the allowlist, redeploy, and check that its existing session no longer opens the site or images.
 
 ## Local development and automated checks
